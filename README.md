@@ -1,1 +1,1 @@
-# Oggy
+# Fan project Oggy

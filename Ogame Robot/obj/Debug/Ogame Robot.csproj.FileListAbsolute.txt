@@ -1,0 +1,40 @@
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\MainWindow.g.cs
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\App.g.cs
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot_MarkupCompile.cache
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot_MarkupCompile.lref
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\bin\Debug\Ogame Robot.exe.config
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\bin\Debug\Ogame Robot.exe
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\bin\Debug\Ogame Robot.pdb
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\bin\Debug\WebDriver.dll
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\bin\Debug\WebDriver.xml
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\MainWindow.baml
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.g.resources
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\Ogame_Robot.Properties.Resources.resources
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.csproj.GenerateResource.cache
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.csproj.CoreCompileInputs.cache
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.csproj.CopyComplete
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.exe
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.pdb
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\bin\Debug\WebDriver.Support.dll
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\bin\Debug\WebDriver.Support.xml
+D:\moje programy\web aplikace\Ogame Robot\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.csprojAssemblyReference.cache
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.csprojAssemblyReference.cache
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\MainWindow.g.cs
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\App.g.cs
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot_MarkupCompile.cache
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot_MarkupCompile.lref
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.exe
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.pdb
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\bin\Debug\Ogame Robot.exe.config
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\bin\Debug\Ogame Robot.exe
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\bin\Debug\Ogame Robot.pdb
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\bin\Debug\WebDriver.dll
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\bin\Debug\WebDriver.Support.dll
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\bin\Debug\WebDriver.xml
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\bin\Debug\WebDriver.Support.xml
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\MainWindow.baml
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.g.resources
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\Ogame_Robot.Properties.Resources.resources
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.csproj.GenerateResource.cache
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.csproj.CoreCompileInputs.cache
+C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\obj\Debug\Ogame Robot.csproj.CopyComplete

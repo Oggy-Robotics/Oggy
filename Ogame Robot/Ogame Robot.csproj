@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{561FE910-45A8-4481-9543-41BB41EB22D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ogame_Robot</RootNamespace>
+    <AssemblyName>Ogame Robot</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\Browser\BrowserInfo.cs" />
+    <Compile Include="Clases\Browser\BrowserManipulation\BrowserManipulation.cs" />
+    <Compile Include="Clases\Browser\BrowserManipulation\GetInformations.cs" />
+    <Compile Include="Clases\Browser\BrowserManipulation\Upgrading.cs" />
+    <Compile Include="Clases\Buildings.cs" />
+    <Compile Include="Clases\DataBase.cs" />
+    <Compile Include="Clases\FilesOperations.cs" />
+    <Compile Include="Clases\Military\Defence\DefenseUnitInfo.cs" />
+    <Compile Include="Clases\Military\Defence\GaussCannonInfo.cs" />
+    <Compile Include="Clases\Military\Defence\HeavyLaserInfo.cs" />
+    <Compile Include="Clases\Military\Defence\IonCannonInfo.cs" />
+    <Compile Include="Clases\Military\Defence\LargeShieldDomeInfo.cs" />
+    <Compile Include="Clases\Military\Defence\LightLaserInfo.cs" />
+    <Compile Include="Clases\Military\Defence\PlasmaTurretInfo.cs" />
+    <Compile Include="Clases\Military\Defence\RocketLauncherInfo.cs" />
+    <Compile Include="Clases\Military\Defence\SmallShieldDomeInfo.cs" />
+    <Compile Include="Clases\Military\Defence\SolarSatInfo.cs" />
+    <Compile Include="Clases\Military\Military.cs" />
+    <Compile Include="Clases\Military\Model\Coord.cs" />
+    <Compile Include="Clases\Military\Model\Defenses\DefenseUnitInfo.cs" />
+    <Compile Include="Clases\Military\Model\Defenses\GaussCannonInfo.cs" />
+    <Compile Include="Clases\Military\Model\Defenses\HeavyLaserInfo.cs" />
+    <Compile Include="Clases\Military\Model\Defenses\IonCannonInfo.cs" />
+    <Compile Include="Clases\Military\Model\Defenses\LargeShieldDomeInfo.cs" />
+    <Compile Include="Clases\Military\Model\Defenses\LightLaserInfo.cs" />
+    <Compile Include="Clases\Military\Model\Defenses\PlasmaTurretInfo.cs" />
+    <Compile Include="Clases\Military\Model\Defenses\RocketLauncherInfo.cs" />
+    <Compile Include="Clases\Military\Model\Defenses\SmallShieldDomeInfo.cs" />
+    <Compile Include="Clases\Military\Model\Defenses\SolarSatInfo.cs" />
+    <Compile Include="Clases\Military\Model\Fleet.cs" />
+    <Compile Include="Clases\Military\Model\Player.cs" />
+    <Compile Include="Clases\Military\Model\Res.cs" />
+    <Compile Include="Clases\Military\Model\Session.cs" />
+    <Compile Include="Clases\Military\Model\Ships\BattlecruiserInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\BattleshipInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\BomberInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\ColonyShipInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\CruiserInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\DeathstarInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\DestroyerInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\EspProbeInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\HeavyFighterInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\LargeCargoInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\LightFighterInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\RecyclerInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\ShipUnitInfo.cs" />
+    <Compile Include="Clases\Military\Model\Ships\SmallCargoInfo.cs" />
+    <Compile Include="Clases\Military\Model\Unit.cs" />
+    <Compile Include="Clases\Military\Model\UnitInfo.cs" />
+    <Compile Include="Clases\Military\Model\UnitType.cs" />
+    <Compile Include="Clases\Military\Ships\Player.cs" />
+    <Compile Include="Clases\Military\Ships\Unit.cs" />
+    <Compile Include="Clases\Military\Ships\UnitType.cs" />
+    <Compile Include="Clases\Military\Model\Universe.cs" />
+    <Compile Include="Clases\Military\Ships\BattlecruiserInfo.cs" />
+    <Compile Include="Clases\Military\Ships\BattleshipInfo.cs" />
+    <Compile Include="Clases\Military\Ships\BomberInfo.cs" />
+    <Compile Include="Clases\Military\Ships\ColonyShipInfo.cs" />
+    <Compile Include="Clases\Military\Ships\CruiserInfo.cs" />
+    <Compile Include="Clases\Military\Ships\DeathstarInfo.cs" />
+    <Compile Include="Clases\Military\Ships\DestroyerInfo.cs" />
+    <Compile Include="Clases\Military\Ships\EspProbeInfo.cs" />
+    <Compile Include="Clases\Military\Ships\HeavyFighterInfo.cs" />
+    <Compile Include="Clases\Military\Ships\LargeCargoInfo.cs" />
+    <Compile Include="Clases\Military\Ships\LightFighterInfo.cs" />
+    <Compile Include="Clases\Military\Ships\RecyclerInfo.cs" />
+    <Compile Include="Clases\Military\Ships\ShipUnitInfo.cs" />
+    <Compile Include="Clases\Military\Ships\SmallCargoInfo.cs" />
+    <Compile Include="Clases\Military\TrashSim.cs" />
+    <Compile Include="Clases\Military\UnitInfo.cs" />
+    <Compile Include="Clases\Browser\NewBrowserThreat.cs" />
+    <Compile Include="Clases\Timer.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Selenium.Chrome.WebDriver.2.45\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('..\packages\Selenium.Chrome.WebDriver.2.45\build\Selenium.Chrome.WebDriver.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Tenhle projekt odkazuje na balíčky NuGet, které nejsou v tomhle počítači k dispozici. Když je chcete stáhnout, použijte funkci obnovení balíčků NuGet.  Další informace najdete na adrese http://go.microsoft.com/fwlink/?LinkID=322105. Chybějícím souborem je soubor {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Selenium.Chrome.WebDriver.2.45\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Chrome.WebDriver.2.45\build\Selenium.Chrome.WebDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.Firefox.WebDriver.0.23.0\build\Selenium.Firefox.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Firefox.WebDriver.0.23.0\build\Selenium.Firefox.WebDriver.targets'))" />
+  </Target>
+  <Import Project="..\packages\Selenium.Firefox.WebDriver.0.23.0\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('..\packages\Selenium.Firefox.WebDriver.0.23.0\build\Selenium.Firefox.WebDriver.targets')" />
+</Project>

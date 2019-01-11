@@ -1,0 +1,221 @@
+28.12.2018 10:17:45
+Byla vyvolána výjimka typu System.Exception.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\BrowserManipulation.cs:řádek 794
+
+28.12.2018 16:35:14
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\BrowserManipulation.cs:řádek 787
+
+28.12.2018 19:11:22
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu)
+
+28.12.2018 19:11:51
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu)
+
+28.12.2018 19:14:12
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu)
+
+6.1.2019 10:44:26
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:26
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:26
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:27
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[4]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:27
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[5]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:27
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[6]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:27
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:27
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[1]/ul[1]/li[8]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:27
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:27
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[2]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:27
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[2]/ul[1]/li[3]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:27
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[2]/ul[1]/li[4]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:27
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[2]/ul[1]/li[5]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+6.1.2019 10:44:27
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/div[2]/ul[1]/li[6]/div[1]/div[1]/div[1]/a[2]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 469
+
+10.1.2019 3:55:52
+Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/ul[1]/li[9]/a[1]
+   v OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   v OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   v OpenQA.Selenium.By.FindElement(ISearchContext context)
+   v OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 219
+   v Ogame_Robot.Clases.BrowserManipulation.GalaxyOpen(Int32 galaxy, Int32 system) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 601
+   v Ogame_Robot.Clases.BrowserManipulation.GalaxyScan(Int32 galaxy, Int32 system, Byte trySpy, Int32 requestedRank, Boolean short_verze) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 638
+   v Ogame_Robot.Clases.BrowserManipulation.GalaxyScan(Int32 fromPlanet, Coordinates from, Int32 range, Byte trySpy, Int32 requestedRank, Boolean short_verze) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 852
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 924
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Timer.cs:řádek 174
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Timer.cs:řádek 62
+

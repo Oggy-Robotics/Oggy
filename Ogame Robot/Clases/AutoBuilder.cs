@@ -30,7 +30,7 @@ namespace Ogame_Robot.Clases
             public override TimeSpan CallFunction()
             {
                 numberOfCall++;
-                TimeSpan cas = buildings.AutomatickaStavba(buildings.browserManipulation, 1);
+                TimeSpan cas = buildings.AutomatickaStavba(buildings.browserManipulation,/*Vychozí režim*/0);
                 if (standardFrequency > cas)
                 {
                     if (cas == TimeSpan.FromSeconds(-1))

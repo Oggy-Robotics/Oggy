@@ -820,3 +820,45 @@ Timed out after 1 seconds
    v OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
    v Ogame_Robot.Clases.BrowserManipulation.WaitForElement(By locator) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 133
 
+13.1.2019 13:59:46
+Timed out after 1 seconds
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   v Ogame_Robot.Clases.BrowserManipulation.WaitForElement(By locator) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 133
+
+13.1.2019 13:59:49
+Timed out after 1 seconds
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   v Ogame_Robot.Clases.BrowserManipulation.WaitForElement(By locator) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 133
+
+13.1.2019 13:59:52
+Timed out after 1 seconds
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   v Ogame_Robot.Clases.BrowserManipulation.WaitForElement(By locator) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 133
+
+13.1.2019 13:59:55
+Timed out after 1 seconds
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   v Ogame_Robot.Clases.BrowserManipulation.WaitForElement(By locator) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 133
+
+13.1.2019 13:59:59
+Timed out after 1 seconds
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   v Ogame_Robot.Clases.BrowserManipulation.WaitForElement(By locator) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 133
+
+13.1.2019 14:00:02
+Timed out after 1 seconds
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   v Ogame_Robot.Clases.BrowserManipulation.WaitForElement(By locator) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 133
+
+13.1.2019 14:00:05
+Timed out after 1 seconds
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   v Ogame_Robot.Clases.BrowserManipulation.WaitForElement(By locator) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 133
+

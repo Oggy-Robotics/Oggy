@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="Clases\Browser\BrowserInfo.cs" />
     <Compile Include="Clases\Browser\BrowserManipulation\BrowserManipulation.cs" />
+    <Compile Include="Clases\Browser\BrowserManipulation\Galaxy.cs" />
     <Compile Include="Clases\Browser\BrowserManipulation\GetInformations.cs" />
     <Compile Include="Clases\Browser\BrowserManipulation\Upgrading.cs" />
     <Compile Include="Clases\Buildings.cs" />
@@ -143,6 +144,7 @@
     <Compile Include="Clases\Military\TrashSim.cs" />
     <Compile Include="Clases\Military\UnitInfo.cs" />
     <Compile Include="Clases\Browser\NewBrowserThreat.cs" />
+    <Compile Include="Clases\Player.cs" />
     <Compile Include="Clases\Timer.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="MainWindow.xaml.cs">

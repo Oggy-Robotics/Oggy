@@ -63,6 +63,8 @@ namespace Ogame_Robot.Clases
             public static string idSexpeditionButton = "system_input";
             public static string relxpathGo = "//div[@class='btn_blue']";
             public static string xpathGo = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/form[1]/div[1]";
+            public static string idGalaxyLoading = "id='galaxyLoading'";
+
 
             ////table[@id='galaxytable']//tbody         //-shortage
             //planets with planet / without planet

@@ -483,11 +483,12 @@ namespace Ogame_Robot.Clases
                         WaitForElement(By.XPath(Messages.xpathPageNext)).Click();
                         actualPage++;
                         bool nextPageNotLoaded = true;
+                        int counter = 0;
                         while (nextPageNotLoaded)
                         {
                             try
                             {
-                                //odloglo me to zde a zustalo to ve smycce
+                                
                                 IWebElement webDriverWaitNextPage = new WebDriverWait(driver, TimeSpan.FromMilliseconds(1000)).Until(ExpectedConditions.ElementIsVisible(By.XPath(Messages.xpathPageNumber)));
 
                                 string text = webDriverWaitNextPage.Text;
@@ -495,7 +496,14 @@ namespace Ogame_Robot.Clases
                                     nextPageNotLoaded = false;
                             }
                             catch (Exception)
-                            { }
+                            {
+                                //-Automatic logout handler
+                                if (counter > 10)
+                                {
+                                    driver.Navigate().Refresh();
+                                }
+                                counter++;
+                            }
 
                         }
                         i = 0;
@@ -617,7 +625,7 @@ namespace Ogame_Robot.Clases
             }
         }
 
-         
+
         public void GalaxyOpen(int galaxy, int system)
         {
             ChangeMenu(Menutab.Galaxie);
@@ -626,6 +634,29 @@ namespace Ogame_Robot.Clases
             WaitForElement(By.Id(Galaxy.idSystemInput)).Clear();
             WaitForElement(By.Id(Galaxy.idSystemInput)).SendKeys(Convert.ToString(system));
             WaitForElement(By.XPath(Galaxy.relxpathGo)).Click();
+
+            //Automatic logout handler
+            //id="galaxyLoading"
+            //style="display: none;"
+            //style="display: block;"
+            int counter = 0;
+            bool unloadad = true;
+            while (unloadad )
+            {
+                Thread.Sleep(20);
+                if (WaitForElement(By.Id(Galaxy.idGalaxyLoading)).GetAttribute("style")== "display: block;")
+                {
+                    if (counter>20)
+                    {
+                        driver.Navigate().Refresh();
+                        GalaxyOpen(galaxy, system);
+                    }
+                    Thread.Sleep(100);
+                counter++;
+                }
+                
+            }
+
         }
         //public void GalaxyScan(int galaxy, int system, int startFromCyrkle,byte trySpy) { }
         public List<GalaxySystem> GalaxyScan(int fromPlanet, Coordinates from, Coordinates to, byte trySpy, int requestedRank, bool short_verze)

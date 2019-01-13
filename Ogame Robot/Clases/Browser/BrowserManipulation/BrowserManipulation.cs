@@ -641,20 +641,47 @@ namespace Ogame_Robot.Clases
             //style="display: block;"
             int counter = 0;
             bool unloadad = true;
-            while (unloadad )
-            {
-                Thread.Sleep(20);
-                if (WaitForElement(By.Id(Galaxy.idGalaxyLoading)).GetAttribute("style")== "display: block;")
+                    Thread.Sleep(40);
+                try
                 {
-                    if (counter>20)
+                    driver.FindElement(By.Id(Galaxy.idGalaxyLoading));
+                }
+                catch (Exception)
+                {
+                    unloadad = false;
+                }
+            while (unloadad)
+            {
+                try
+                {
+                    if (WaitForElement(By.Id(Galaxy.idGalaxyLoading)).GetAttribute("style") == "display: block;")
                     {
+                        if (counter > 20)
+                        {
+                            unloadad = false;
+                            driver.Navigate().Refresh();
+                            GalaxyOpen(galaxy, system);
+                        }
+                        Thread.Sleep(100);
+                        counter++;
+                    }
+                    else if (WaitForElement(By.Id(Galaxy.idGalaxyLoading)).GetAttribute("style") == "display: none;")
+                    {
+                        unloadad = false;
+                    }
+                }
+                catch (Exception)
+                {
+                    if (counter > 20)
+                    {
+                        unloadad = false;
                         driver.Navigate().Refresh();
                         GalaxyOpen(galaxy, system);
                     }
                     Thread.Sleep(100);
-                counter++;
+                    counter++;
                 }
-                
+
             }
 
         }
@@ -974,8 +1001,8 @@ namespace Ogame_Robot.Clases
         {
             //get info
             List<Coordinates> coordinates = InfoPlayerCoordinatesOfPlanets();
-            //List<GalaxySystem> galaxySystems = GalaxyScan(startingPlanet, coordinates[startingPlanet - 1], distance, 1, requestedRank,true);
-            //Thread.Sleep(TimeSpan.FromMinutes(2));//použít letky-start /end
+            List<GalaxySystem> galaxySystems = GalaxyScan(startingPlanet, coordinates[startingPlanet - 1], distance, 1, requestedRank,true);
+            Thread.Sleep(TimeSpan.FromMinutes(2));//použít letky-start /end
             List<MessageSpy> messageSpies = GetSpyMessages(120);
             ProductionSeting productionSeting = InfoProductionSeting();
 

@@ -53,6 +53,7 @@ namespace Ogame_Robot.Clases
 
 
                 bool wait = true;
+                int counter = 0;
                 while (wait)
                 {
                     try
@@ -61,7 +62,11 @@ namespace Ogame_Robot.Clases
                         wait = false;
                     }
                     catch (Exception)
-                    { }
+                    {
+                        if(counter>3)
+                        driver.FindElement(By.XPath(FleetPanel.panel)).Click();
+                        counter++;
+                    }
                 }
 
                 bool next = true;

@@ -49,7 +49,6 @@ namespace Ogame_Robot.Clases
             browser.Loggin();
             browser.LogginUniverse();
 
-
             browser.UnderAttack();
             //browser.FarmInactive(1, 160, 0.2, true, 12, 3,450);
             //browser.InfoPlayer();

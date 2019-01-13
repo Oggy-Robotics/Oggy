@@ -16,9 +16,10 @@ namespace Ogame_Robot.Clases
         public DateTime InfoLastShipCameBack()
         {
             DateTime last = DateTime.MinValue;
-            WaitForElement(By.XPath(FleetPanel.panel)).Click();
+            FleetMovements fleetMovements = InfoFleetMovement();
 
-            return last;
+
+            return fleetMovements.fleetMovements[fleetMovements.fleetMovements.Count() - 1].arrivalTime;
         }
 
         public FleetMovements InfoFleetMovement()
@@ -610,7 +611,7 @@ namespace Ogame_Robot.Clases
                 ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[1]/div[1]/div[1]/a[2]
                 ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[2]
 
-                string xpath1 = Hangar.relxpathHangar.Replace("XXX", Convert.ToString(Hangar.shipDetail[i]));//more stable-ewen for build in proces
+                string xpath1 = Hangar.relxpathHangar.Replace("XXX", Convert.ToString(Hangar.shipDetail[i-1]));//more stable-ewen for build in proces
                 //string xpath1 = Hangar.xpathHangar.Replace("$", Convert.ToString(b)).Replace("&", Convert.ToString(a));//počet lodí
                 string xpath2 = Hangar.xpathHangarInBuild.Replace("$", Convert.ToString(b)).Replace("&", Convert.ToString(a));//in process
                 IWebElement webElement;//Text = "1\r\n2"

@@ -17,7 +17,7 @@ namespace Ogame_Robot.Clases
 
         public void Inicialization()
         {
-            
+             
         }
 
 

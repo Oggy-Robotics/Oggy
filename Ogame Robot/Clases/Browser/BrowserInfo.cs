@@ -8,7 +8,7 @@ namespace Ogame_Robot.Clases
 {
     public class BrowserInfo
     {
-
+        
         public class Login
         {
             public static string idusernameLogin = "usernameLogin";

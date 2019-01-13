@@ -121,6 +121,7 @@ namespace Ogame_Robot.Clases
             }
             //close login page
             driver.SwitchTo().Window(driver.WindowHandles[0]).Close();
+            driver.SwitchTo().Window(driver.WindowHandles[0]);
         }
 
 
@@ -131,10 +132,11 @@ namespace Ogame_Robot.Clases
             {
                 return new WebDriverWait(driver, TimeSpan.FromMilliseconds(1000)).Until(ExpectedConditions.ElementExists(locator));
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 try
                 {
+                    Thread.Sleep(waitMilisec);
                     return new WebDriverWait(driver, TimeSpan.FromMilliseconds(1000)).Until(ExpectedConditions.ElementExists(locator));
                 }
                 catch (Exception)
@@ -145,11 +147,12 @@ namespace Ogame_Robot.Clases
                     if (locator == By.XPath(Overview.xpathPlanetMenuName))
                         return new WebDriverWait(driver, TimeSpan.FromMilliseconds(1000)).Until(ExpectedConditions.ElementExists(By.XPath(SettingsSuply.xpathPlanetName)));
                 }
-                catch (Exception e)
+                catch (Exception e2)
                 {
-                    FilesOperations.ErrorLogFileAddError(e);
+                    FilesOperations.ErrorLogFileAddError(e2);
                     return null;
                 }
+                FilesOperations.ErrorLogFileAddError(e);
                 return null;
 
             }
@@ -224,10 +227,20 @@ namespace Ogame_Robot.Clases
                     WaitForElement(By.XPath(Path)).Click();
 
                     WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(500));
-                    while (driver.FindElement(By.XPath(Path)).Text != driver.FindElement(By.XPath(Menutab.SelectedIcon)).Text)
+                    bool unfinished = true;
+                    while (unfinished)
                     {
-                        wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.XPath(Path)));
-                        wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.XPath(Menutab.SelectedIcon)));
+                        try
+                        {
+                            while (driver.FindElement(By.XPath(Path)).Text != driver.FindElement(By.XPath(Menutab.SelectedIcon)).Text)//ok!unattached to the DOM
+                            {
+                                wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.XPath(Path)));
+                                wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.XPath(Menutab.SelectedIcon)));
+                            }
+                            unfinished = false;
+                        }
+                        catch (Exception)
+                        {}
                     }
 
                     InfoMenu(Path);
@@ -359,11 +372,17 @@ namespace Ogame_Robot.Clases
                     {
                         MessageSpy messageSpy = new MessageSpy();
 
-
                         //player name
                         messageSpy.player = WaitForElement(By.XPath(Messages.xpathMessageLinePlayerName.Replace("$", Convert.ToString(i)))).Text;
-                        while (messageSpy.player[0] == ' ')
-                            messageSpy.player = messageSpy.player.Remove(0, 1);
+                        string name = messageSpy.player;
+                        if (messageSpy.player.Count()<2)
+                            messageSpy.player = "AnyPlayer*";
+                        else
+                        {
+
+                            while (messageSpy.player[0] == ' ')
+                                messageSpy.player = messageSpy.player.Remove(0, 1);
+                        }
 
                         //coordinates
                         //Domovska planeta [1:460:10]
@@ -468,7 +487,7 @@ namespace Ogame_Robot.Clases
                         {
                             try
                             {
-
+                                //odloglo me to zde a zustalo to ve smycce
                                 IWebElement webDriverWaitNextPage = new WebDriverWait(driver, TimeSpan.FromMilliseconds(1000)).Until(ExpectedConditions.ElementIsVisible(By.XPath(Messages.xpathPageNumber)));
 
                                 string text = webDriverWaitNextPage.Text;
@@ -696,7 +715,7 @@ namespace Ogame_Robot.Clases
                                 while (driver.FindElement(By.Id(Galaxy.idHeadSlots_twoinone)).Text.Split('/')[1] == driver.FindElement(By.Id(Galaxy.idHeadSlotsUsed)).Text
                                     || Convert.ToInt32(driver.FindElement(By.Id(Galaxy.idHeadProbes)).Text) < 1)
                                 {
-                                    Thread.Sleep(5000);
+                                    Thread.Sleep(5000);//stoped-odloglo me to-refresh/restart needed
                                     GalaxyOpen(galaxy, system);
                                 }
                                 if (position.playerExtraInfo == "(i)" || position.playerExtraInfo == "(I)")
@@ -924,8 +943,8 @@ namespace Ogame_Robot.Clases
         {
             //get info
             List<Coordinates> coordinates = InfoPlayerCoordinatesOfPlanets();
-            List<GalaxySystem> galaxySystems = GalaxyScan(startingPlanet, coordinates[startingPlanet - 1], distance, 1, requestedRank,true);
-            Thread.Sleep(TimeSpan.FromMinutes(2));//použít letky-start /end
+            //List<GalaxySystem> galaxySystems = GalaxyScan(startingPlanet, coordinates[startingPlanet - 1], distance, 1, requestedRank,true);
+            //Thread.Sleep(TimeSpan.FromMinutes(2));//použít letky-start /end
             List<MessageSpy> messageSpies = GetSpyMessages(120);
             ProductionSeting productionSeting = InfoProductionSeting();
 
@@ -1236,13 +1255,11 @@ namespace Ogame_Robot.Clases
             ChangeMenu(Menutab.Letky);
 
             string xpathfleetPutAmount = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[%]/div[2]/form[1]/div[$]/ul[1]/li[&]/input[1]";
-            string xpathfleetNextButon = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[%]/div[2]/div[2]/div[1]/a[1]/span[1]";
             string xpathFleetSpeed = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/form[1]/div[1]/div[4]/div[2]/div[1]/ul[1]/li[3]/div[1]/a[&]";
             string xpathFleetMision = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[5]/div[2]/ul[1]/li[&]/a[1]";
-            string xpathfleetNextButon2 = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/form[1]/div[1]/div[5]/div[2]/div[1]/div[1]/a[1]/span[1]";
-            string xpathfleetNextButon2v2 = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/form[1]/div[1]/div[4]/div[2]/div[1]/div[1]/a[1]/span[1]";
+            string relxpathFleetNextButon1_2 = "//a[@id='continue']/span[1]";//class="on"
 
-            string xpathfleetNextButon3 = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[6]/div[2]/form[1]/div[2]/a[2]/span[1]";
+            string relxpathFleetNextButon3 = "//a[@id='start']/span[1]";
             string xpathFleetIfleetslots = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[2]/div[1]/div[1]/span[1]";
 
             IWebElement webElement1 = WaitForElement(By.XPath(xpathFleetIfleetslots));
@@ -1311,20 +1328,16 @@ namespace Ogame_Robot.Clases
                             }
                         }
                     }
-                    try
-                    {
-                        driver.FindElement(By.XPath(xpathfleetNextButon.Replace("%", "7"))).Click();
-                    }
-                    catch (Exception)
+                    bool unfinished = true;
+                    while (unfinished)
                     {
                         try
                         {
-                            driver.FindElement(By.XPath(xpathfleetNextButon.Replace("%", "6"))).Click();
+                            driver.FindElement(By.XPath(relxpathFleetNextButon1_2)).Click();
+                            unfinished = false;
                         }
                         catch (Exception)
-                        {
-                            driver.FindElement(By.XPath(xpathfleetNextButon.Replace("%", "5"))).Click();
-                        }
+                        { }
                     }
                     Thread.Sleep(1000);
                 }
@@ -1333,50 +1346,80 @@ namespace Ogame_Robot.Clases
                 //sending fleet II
                 {
                     //+is enought deu? -cost: /html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/form[1]/div[1]/div[4]/div[2]/div[1]/ul[1]/li[2]/span[1]/span[1]/span[1]
-                    WaitForElement(By.Id("galaxy")).Clear();
-                    driver.FindElement(By.Id("galaxy")).SendKeys(Convert.ToString(coordinatesTo.galaxy));
-                    driver.FindElement(By.Id("system")).Clear();
-                    driver.FindElement(By.Id("system")).SendKeys(Convert.ToString(coordinatesTo.system));
-                    driver.FindElement(By.Id("position")).Clear();
-                    driver.FindElement(By.Id("position")).SendKeys(Convert.ToString(coordinatesTo.planet));
+                    bool unloaded = true;
+                    while (unloaded)
+                    {
+                        try
+                        {                            
+                            WaitForElement(By.Id("galaxy")).Clear();
+                            unloaded = false;
+                        }
+                        catch (Exception)
+                        { }
+                    }
+                    WaitForElement(By.Id("galaxy")).SendKeys(Convert.ToString(coordinatesTo.galaxy));
+                    WaitForElement(By.Id("system")).Clear();
+                    WaitForElement(By.Id("system")).SendKeys(Convert.ToString(coordinatesTo.system));
+                    WaitForElement(By.Id("position")).Clear();
+                    WaitForElement(By.Id("position")).SendKeys(Convert.ToString(coordinatesTo.planet));
                     if (coordinatesTo.moon == 1)
-                        driver.FindElement(By.Id("pbutton")).Click();
+                        WaitForElement(By.Id("pbutton")).Click();
                     if (coordinatesTo.moon == 2)
-                        driver.FindElement(By.Id("mbutton")).Click();
+                        WaitForElement(By.Id("mbutton")).Click();
                     if (coordinatesTo.moon == 3)
-                        driver.FindElement(By.Id("dbutton")).Click();
-                    driver.FindElement(By.XPath(xpathFleetSpeed.Replace("&", Convert.ToString(speed)))).Click();
+                        WaitForElement(By.Id("dbutton")).Click();
+                    WaitForElement(By.XPath(xpathFleetSpeed.Replace("&", Convert.ToString(speed)))).Click();
                     ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/form[1]/div[1]/div[4]/div[2]/table[1]/tbody[1]/tr[2]/td[1]/div[2]/a[1] //planeta vzlet
                     ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/form[1]/div[1]/div[4]/div[2]/table[1]/tbody[1]/tr[2]/td[1]/div[2]/a[2] //mesíc vzlet
-                    try
+                    bool unfinished = true;
+                    while (unfinished)
                     {
-                        driver.FindElement(By.XPath(xpathfleetNextButon2)).Click();
-
-                    }
-                    catch (Exception)
-                    {
-                        driver.FindElement(By.XPath(xpathfleetNextButon2v2)).Click();
-
+                        try
+                        {
+                            driver.FindElement(By.XPath(relxpathFleetNextButon1_2)).Click();
+                            unfinished = false;
+                        }
+                        catch (Exception)
+                        { }
                     }
                     Thread.Sleep(1000);
                 }
 
                 //sending fleet III
-
                 {
-                    WaitForElement(By.XPath(xpathFleetMision.Replace("&", Convert.ToString(mision)))).Click();
-                    int i = 0;
-                    driver.FindElement(By.Id("metal")).Clear();
-                    driver.FindElement(By.Id("metal")).SendKeys(Convert.ToString(resources.metal));
-                    driver.FindElement(By.Id("crystal")).Clear();
-                    driver.FindElement(By.Id("crystal")).SendKeys(Convert.ToString(resources.crystal));
-                    driver.FindElement(By.Id("deuterium")).Clear();
-                    driver.FindElement(By.Id("deuterium")).SendKeys(Convert.ToString(resources.deuterium));
+                    bool unloaded = true;
+                    while (unloaded)
+                    {
+                        try
+                        {
+                            WaitForElement(By.XPath(xpathFleetMision.Replace("&", Convert.ToString(mision)))).Click();
+                            unloaded = false;
+                        }
+                        catch (Exception)
+                        { }
+                    }
+                    WaitForElement(By.Id("metal")).Clear();
+                    WaitForElement(By.Id("metal")).SendKeys(Convert.ToString(resources.metal));
+                    WaitForElement(By.Id("crystal")).Clear();
+                    WaitForElement(By.Id("crystal")).SendKeys(Convert.ToString(resources.crystal));
+                    WaitForElement(By.Id("deuterium")).Clear();
+                    WaitForElement(By.Id("deuterium")).SendKeys(Convert.ToString(resources.deuterium));
 
 
-                    ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", driver.FindElement(By.XPath(xpathfleetNextButon3)));
-                    IWebElement webDriverWait = new WebDriverWait(driver, TimeSpan.FromMilliseconds(1000)).Until(ExpectedConditions.ElementIsVisible(By.XPath(xpathfleetNextButon3)));
-                    driver.FindElement(By.XPath(xpathfleetNextButon3)).Click();
+                    ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", driver.FindElement(By.XPath(relxpathFleetNextButon3)));
+                    IWebElement webDriverWait = new WebDriverWait(driver, TimeSpan.FromMilliseconds(1000)).Until(ExpectedConditions.ElementIsVisible(By.XPath(relxpathFleetNextButon3)));
+                    bool unfinished = true;
+                    while (unfinished)
+                    {
+                        try
+                        {
+                            driver.FindElement(By.XPath(relxpathFleetNextButon3)).Click();
+                            unfinished = false;
+                        }
+                        catch (Exception)
+                        { }
+                    }
+
                     Thread.Sleep(1000);
 
                 }

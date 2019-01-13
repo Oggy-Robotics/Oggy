@@ -641,11 +641,19 @@ namespace Ogame_Robot.Clases
             //style="display: block;"
             int counter = 0;
             bool unloadad = true;
+                    Thread.Sleep(40);
+                try
+                {
+                    driver.FindElement(By.Id(Galaxy.idGalaxyLoading));
+                }
+                catch (Exception)
+                {
+                    unloadad = false;
+                }
             while (unloadad)
             {
                 try
                 {
-                    Thread.Sleep(40);
                     if (WaitForElement(By.Id(Galaxy.idGalaxyLoading)).GetAttribute("style") == "display: block;")
                     {
                         if (counter > 20)

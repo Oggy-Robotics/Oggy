@@ -10,6 +10,7 @@ namespace Ogame_Robot.Clases
 
     public partial class Timer
     {
+        public int maxID = 0;
         public List<PackedFunction> packedFunctions = new List<PackedFunction>();
         public void Call(int i)
         {
@@ -85,6 +86,8 @@ namespace Ogame_Robot.Clases
 
             public DateTime nextCall;
             public TimeSpan standardFrequency;
+            public int ID;
+
 
             public virtual TimeSpan CallFunction()
             {
@@ -101,12 +104,16 @@ namespace Ogame_Robot.Clases
 
             public InfoPlayer(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency)
             {
+                this.ID = timer.maxID + 1;
+                timer.maxID++;
                 this.browser = browser;
                 this.standardFrequency = standardFrequency;
                 timer.packedFunctions.Add(this);
             }
             public InfoPlayer(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency, TimeSpan addTime)
             {
+                this.ID = timer.maxID + 1;
+                timer.maxID++;
                 this.browser = browser;
                 nextCall = DateTime.Now + addTime;
                 this.standardFrequency = standardFrequency;
@@ -126,12 +133,16 @@ namespace Ogame_Robot.Clases
 
             public UnderAttack(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency)
             {
+                this.ID = timer.maxID+1;
+                timer.maxID++;
                 this.browser = browser;
                 this.standardFrequency = standardFrequency;
                 timer.packedFunctions.Add(this);
             }
             public UnderAttack(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency, TimeSpan addTime)
             {
+                this.ID = timer.maxID + 1;
+                timer.maxID++;
                 this.browser = browser;
                 nextCall = DateTime.Now + addTime;
                 this.standardFrequency = standardFrequency;
@@ -157,14 +168,19 @@ namespace Ogame_Robot.Clases
             public BrowserManipulation browser;
             public int numberOfCall = 0;
 
+
             public FarmInactive(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency)
             {
+                this.ID = timer.maxID + 1;
+                timer.maxID++;
                 this.browser = browser;
                 this.standardFrequency = standardFrequency;
                 timer.packedFunctions.Add(this);
             }
             public FarmInactive(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency, TimeSpan addTime)
             {
+                this.ID = timer.maxID + 1;
+                timer.maxID++;
                 this.browser = browser;
                 nextCall = DateTime.Now + addTime;
                 this.standardFrequency = standardFrequency;

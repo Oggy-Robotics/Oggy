@@ -61,7 +61,9 @@ namespace Ogame_Robot.Clases
                         wait = false;
                     }
                     catch (Exception)
-                    { }
+                    {
+                        driver.FindElement(By.XPath(FleetPanel.panel)).Click();
+                    }
                 }
 
                 bool next = true;

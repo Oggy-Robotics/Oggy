@@ -650,6 +650,7 @@ namespace Ogame_Robot.Clases
                     {
                         if (counter > 20)
                         {
+                            unloadad = false;
                             driver.Navigate().Refresh();
                             GalaxyOpen(galaxy, system);
                         }
@@ -661,6 +662,7 @@ namespace Ogame_Robot.Clases
                 {
                     if (counter > 20)
                     {
+                        unloadad = false;
                         driver.Navigate().Refresh();
                         GalaxyOpen(galaxy, system);
                     }

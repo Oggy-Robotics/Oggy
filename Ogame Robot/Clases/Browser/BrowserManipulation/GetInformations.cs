@@ -30,21 +30,21 @@ namespace Ogame_Robot.Clases
 
             //detection for fleet bar if exist or isnt
             int cycleClick = 0;
-            bool cycleuncucees = true;
-            while (cycleuncucees)
+            bool cycleUnsucees = true;
+            while (cycleUnsucees)
             {
                 try
                 {
                     driver.FindElement(By.XPath(FleetPanel.panel)).Click();
                     someFleetActivity = true;
-                    cycleuncucees = false;
+                    cycleUnsucees = false;
                 }
                 catch (Exception)
                 {
                     Thread.Sleep(TimeSpan.FromSeconds(0.5));
                     cycleClick++;
                     if (cycleClick == 3)
-                        cycleuncucees = false;
+                        cycleUnsucees = false;
                 }
 
             }
@@ -197,6 +197,9 @@ namespace Ogame_Robot.Clases
                         line++;
                     }
                 }
+
+                //closeing panel
+                driver.FindElement(By.XPath(FleetPanel.panel)).Click();
             }
 
 

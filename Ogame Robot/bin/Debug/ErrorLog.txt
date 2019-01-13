@@ -219,3 +219,604 @@ Unable to locate element: /html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/ul
    v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Timer.cs:řádek 48
    v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Ogame Robot\Ogame Robot\Clases\Timer.cs:řádek 62
 
+11.1.2019 23:14:23
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+11.1.2019 23:42:47
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 0:11:15
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 0:40:48
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 1:09:28
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 1:48:07
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 2:26:29
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 8:35:39
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 9:08:35
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 9:44:34
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 10:20:38
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 10:55:36
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 11:28:18
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 12:01:41
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 12:32:59
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 13:03:56
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 13:34:30
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 14:05:40
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 14:33:51
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 15:04:38
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 15:28:48
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 15:50:29
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 16:17:15
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 16:40:32
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 17:09:21
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 17:42:53
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 18:15:42
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 18:54:47
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 19:49:26
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 20:11:11
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 20:36:00
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 21:01:44
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 21:28:16
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 21:53:09
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 22:16:29
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 22:39:20
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 23:02:46
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 23:24:58
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+12.1.2019 23:47:03
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+13.1.2019 0:10:04
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+13.1.2019 0:32:44
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+13.1.2019 0:57:34
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+13.1.2019 1:25:28
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+13.1.2019 1:53:50
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+13.1.2019 2:24:10
+Index je mimo hranice pole.
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar(Boolean menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 613
+   v Ogame_Robot.Clases.BrowserManipulation.InfoMenu(String menu) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 850
+   v Ogame_Robot.Clases.BrowserManipulation.ChangeMenu(String Path) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 234
+   v Ogame_Robot.Clases.BrowserManipulation.InfoHangar() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\GetInformations.cs:řádek 586
+   v Ogame_Robot.Clases.Military.Military.GetMyFleetTotalInfo(Int32 planet, BrowserManipulation browser) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Military\Military.cs:řádek 51
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 978
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+13.1.2019 4:37:45
+Index je mimo hranice pole.
+   v System.String.get_Chars(Int32 index)
+   v Ogame_Robot.Clases.BrowserManipulation.GetSpyMessages(Int32 maxMinutsOld) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 366
+   v Ogame_Robot.Clases.BrowserManipulation.FarmInactive(Int32 startingPlanet, Int32 distance, Double distanceCoefficient, Boolean simulate, Int32 forceMultiplier, Int32 minimalHourResources, Int32 requestedRank) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 930
+   v Ogame_Robot.Clases.Timer.FarmInactive.CallFunction() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 175
+   v Ogame_Robot.Clases.Timer.Call(Int32 i) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 16
+   v Ogame_Robot.Clases.Timer.WaitAndCallNext(Boolean wait) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 48
+   v Ogame_Robot.Clases.Timer.Start() v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Timer.cs:řádek 62
+
+13.1.2019 5:51:07
+Timed out after 1 seconds
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   v OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   v Ogame_Robot.Clases.BrowserManipulation.WaitForElement(By locator) v C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\Clases\Browser\BrowserManipulation\BrowserManipulation.cs:řádek 133
+

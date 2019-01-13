@@ -37,9 +37,9 @@ namespace Ogame_Robot.Clases
                 rezim.Add(vychozíRezim);   //výchozí režim je 0 => nedělá nic
                 PlanetaHrace.Add(new Player.Planet());
             }
-                ; //možnost vybrat stavební režim pro planety
+            ; //možnost vybrat stavební režim pro planety
             //rezim[4] = 2; rezim[6] = 2;
-            /*  Nastavuje 5. a 7. planetu do režimu 2     */
+            /*  Nastavuje 5. a 7. planetu do režimu 2  */
 
 
 
@@ -50,11 +50,12 @@ namespace Ogame_Robot.Clases
                 {
                     PlanetaHrace[a].suply = browserManipulation.InfoSuply(a + 1);   //získání infa o dolech atd na planetě 1->X
                 }
+                //Jaký je režim?
                 switch (rezim[a])
                 {
                     /*     čas = -1            */
                     case 0: {/* Recess -> nestaví */ cas_dalsiho_volani.Add("-1"); } break;
-
+                    
                     case 1:/* Balanced 
                         Snaží se mít kov a krystal na stejné urovni 
                         když dul na kov je nižší než nebo roven krystalu, vylepší ho, jinak vylepší krystal*/
@@ -62,25 +63,63 @@ namespace Ogame_Robot.Clases
                             //                  kov    je menší nebo roven     krystal
                             if (PlanetaHrace[a].suply[0].lv <= PlanetaHrace[a].suply[1].lv)
                             {
-                                try
+                                try//dá se něco postavit?
                                 {
                                     //browserManipulation.ChangePlanet(a + 1);  //not needed if used within search for informations
                                     browserManipulation.UpgradeSuply(1);    // 1=kov
-
-
-                                    cas_dalsiho_volani.Add(browse.WaitForElement(By.XPath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]")).Text);
+                                    try//získej čas stavby
+                                    {
+                                        cas_dalsiho_volani.Add(browse.WaitForElement(By.XPath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]")).Text);
+                                    }
+                                    catch(Exception e)
+                                    {
+                                        FilesOperations.ErrorLogFileAddError(e); // CHYBA XPATHU čas stavby
+                                        ;
+                                    }
                                 }
-                                catch (Exception)
+                                catch (Exception)//když už se staví
                                 {
-                                    cas_dalsiho_volani.Add(browse.WaitForElement(By.XPath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]")).Text);
+                                    try//získej čas stavby
+                                    {
+                                        cas_dalsiho_volani.Add(browse.WaitForElement(By.XPath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]")).Text);
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        FilesOperations.ErrorLogFileAddError(e); // CHYBA XPATHU čas stavby
+                                        ;
+                                    }
                                 }
                             }
                             //                  kov    je větší než           krystal 
                             if (PlanetaHrace[a].suply[0].lv > PlanetaHrace[a].suply[1].lv)
                             {
-                                //browserManipulation.ChangePlanet(a + 1);    //not needed if used within search for informations
-                                browserManipulation.UpgradeSuply(2);    // 2=krystal
-                                ;
+                                try//dá se něco postavit?
+                                {
+                                    //browserManipulation.ChangePlanet(a + 1);  //not needed if used within search for informations
+
+                                    browserManipulation.UpgradeSuply(2);    // 2=krystal
+                                    try//získej čas stavby
+                                    {
+                                        cas_dalsiho_volani.Add(browse.WaitForElement(By.XPath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]")).Text);
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        FilesOperations.ErrorLogFileAddError(e); // CHYBA XPATHU čas stavby
+                                        ;
+                                    }
+                                }
+                                catch (Exception)//když už se staví
+                                {
+                                    try//získej čas stavby
+                                    {
+                                        cas_dalsiho_volani.Add(browse.WaitForElement(By.XPath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]")).Text);
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        FilesOperations.ErrorLogFileAddError(e); // CHYBA XPATHU čas stavby
+                                        ;
+                                    }
+                                }
                             }
                         }
                         break;

@@ -131,12 +131,19 @@ namespace Ogame_Robot.Clases
                         int cycle = 1;
                         Actions action = new Actions(driver);
 
+                        //if player dont have spy lv
+                        if (driver.FindElement(By.XPath(FleetPanel.Table.Replace("$", Convert.ToString(line)).Replace("&", Convert.ToString(FleetPanel.detailsFleet)))).Text.Length<2)
+                        {
+                            hided = false;
+                        }
+
+                        //move with view
                         ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", driver.FindElement(By.XPath(FleetPanel.Table.Replace("$", Convert.ToString(line)).Replace("&", Convert.ToString(FleetPanel.icon_movement)))));
                         IWebElement webDriverWait = new WebDriverWait(driver, TimeSpan.FromMilliseconds(1000)).Until(ExpectedConditions.ElementIsVisible(By.XPath(FleetPanel.Table.Replace("$", Convert.ToString(line)).Replace("&", Convert.ToString(FleetPanel.icon_movement)))));
                         action.MoveToElement(driver.FindElement(By.XPath((FleetPanel.Table.Replace("$", Convert.ToString(line)).Replace("&", Convert.ToString(FleetPanel.icon_movement)))))).Perform();
 
-
-                        while (hided)//!if astrofizik is 0 or low it get stopped here-any info abaout units-no clickable element
+                        //find element with info about fleet
+                        while (hided)//ok!if spy tech is 0 or low it get stopped here-any info abaout units-no clickable element
                         {
                             try
                             {
@@ -158,7 +165,7 @@ namespace Ogame_Robot.Clases
                                 cycle = 1;
                         }
 
-                        //ships should be loaded from scan from hangar from each ship type name
+                        //!ships should be loaded from scan from hangar from each ship type name
                         string[] ships = { "Lehký stíhač", "Těžký stíhač", "Křižník", "Bitevní loď", "Bitevní křižník", "Bombardér", "Ničitel", "Hvězda smrti", "Malý transportér", "Velký transportér", "Kolonizační loď", "Recyklátor", "Špionážní sonda" };
                         string[] lines = textShips.Split(new string[] { "\r\n" }, StringSplitOptions.None);
                         bool fleetStats = true;

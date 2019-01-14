@@ -91,7 +91,7 @@ namespace Ogame_Robot.Clases
             return galaxySystems;
         }
         /// <summary>
-        /// 
+        /// could return null if no spyProbes or free Fleet and trySpy=true
         /// </summary>
         /// <param name="galaxy"></param>
         /// <param name="system"></param>
@@ -156,11 +156,21 @@ namespace Ogame_Robot.Clases
                         {
                             if (trySpy == 1 && galaxySystem.positions[planetnumber].rank <= requestedRank)
                             {
+                                int counter = 0;//any free slot or spy probes
                                 while (driver.FindElement(By.Id(Galaxy.idHeadSlots_twoinone)).Text.Split('/')[1] == driver.FindElement(By.Id(Galaxy.idHeadSlotsUsed)).Text
                                     || Convert.ToInt32(driver.FindElement(By.Id(Galaxy.idHeadProbes)).Text) < 1)
                                 {
+                                    if (counter >= 20)//fc cant be finished
+                                    {
+                                        return null;
+                                    }
                                     Thread.Sleep(5000);//stoped-odloglo me to-refresh/restart needed
                                     GalaxyOpen(galaxy, system);
+                                    counter++;
+                                    if (Convert.ToInt32(driver.FindElement(By.Id(Galaxy.idHeadProbes)).Text) < 1)
+                                    {
+                                        counter += 4;
+                                    }
                                 }
                                 if (position.playerExtraInfo == "(i)" || position.playerExtraInfo == "(I)")
                                 {
@@ -264,11 +274,21 @@ namespace Ogame_Robot.Clases
                             if (trySpy == 1 && galaxySystem.positions[planetnumber].rank <= requestedRank)
                             {
 
+                                int counter = 0;//any free slot or spy probes
                                 while (driver.FindElement(By.Id(Galaxy.idHeadSlots_twoinone)).Text.Split('/')[1] == driver.FindElement(By.Id(Galaxy.idHeadSlotsUsed)).Text
                                     || Convert.ToInt32(driver.FindElement(By.Id(Galaxy.idHeadProbes)).Text) < 1)
                                 {
-                                    Thread.Sleep(5000);
+                                    if (counter >= 20)//fc cant be finished
+                                    {
+                                        return null;
+                                    }
+                                    Thread.Sleep(5000);//stoped-odloglo me to-refresh/restart needed
                                     GalaxyOpen(galaxy, system);
+                                    counter++;
+                                    if (Convert.ToInt32(driver.FindElement(By.Id(Galaxy.idHeadProbes)).Text) < 1)
+                                    {
+                                        counter += 4;
+                                    }
                                 }
                                 if (position.playerExtraInfo == "(i)" || position.playerExtraInfo == "(I)")
                                 {
@@ -310,17 +330,29 @@ namespace Ogame_Robot.Clases
             ChangePlanet(fromPlanet);
             List<GalaxySystem> galaxySystems = new List<GalaxySystem>();
 
-
             Coordinates coordinates = from;
-            galaxySystems.Add(GalaxyScan(coordinates.galaxy, coordinates.system, trySpy, requestedRank, short_verze));/*      SHORT VERZE         */
+            GalaxySystem galaxySystemToAdd = GalaxyScan(coordinates.galaxy, coordinates.system, trySpy, requestedRank, short_verze);
+            if (galaxySystemToAdd != null)
+                galaxySystems.Add(galaxySystemToAdd);/*      SHORT VERZE         */
+            else
+                return galaxySystems;
+
             for (int i = 1; i <= range; i++)
             {
                 coordinates = from.Change(i);
-                galaxySystems.Add(GalaxyScan(coordinates.galaxy, coordinates.system, trySpy, requestedRank, short_verze));/*      SHORT VERZE         */
-                coordinates = from.Change(-i);
-                galaxySystems.Add(GalaxyScan(coordinates.galaxy, coordinates.system, trySpy, requestedRank, short_verze));/*      SHORT VERZE         */
-            }
+                galaxySystemToAdd = GalaxyScan(coordinates.galaxy, coordinates.system, trySpy, requestedRank, short_verze);
+                if (galaxySystemToAdd != null)
+                    galaxySystems.Add(galaxySystemToAdd);
+                else
+                    return galaxySystems;
 
+                coordinates = from.Change(-i);
+                galaxySystemToAdd = GalaxyScan(coordinates.galaxy, coordinates.system, trySpy, requestedRank, short_verze);
+                if (galaxySystemToAdd != null)
+                    galaxySystems.Add(galaxySystemToAdd);
+                else
+                    return galaxySystems;
+            }
             return galaxySystems;
         }
 

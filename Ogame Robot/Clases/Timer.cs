@@ -10,7 +10,10 @@ namespace Ogame_Robot.Clases
 
     public partial class Timer
     {
-        public int maxID = 0;
+        /// <summary>
+        /// ids starts from 0 soo starting max value is -1
+        /// </summary>
+        public int maxID = -1;
         public List<PackedFunction> packedFunctions = new List<PackedFunction>();
         public void Call(int i)
         {
@@ -77,13 +80,30 @@ namespace Ogame_Robot.Clases
             }
         }
 
+        /// <summary>
+        /// return -1 if it isnt exist
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
+        public int PositionOfFciByID(int ID)
+        {
+            for (int i = 0; i < packedFunctions.Count(); i++)
+            {
+                if (packedFunctions[i].ID == ID)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
 
 
         public class PackedFunction : Timer
         {
             public PackedFunction()
             { }
-
+            public Timer timer;
             public DateTime nextCall;
             public TimeSpan standardFrequency;
             public int ID;
@@ -104,6 +124,7 @@ namespace Ogame_Robot.Clases
 
             public InfoPlayer(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency)
             {
+                this.timer = timer;
                 this.ID = timer.maxID + 1;
                 timer.maxID++;
                 this.browser = browser;
@@ -112,6 +133,7 @@ namespace Ogame_Robot.Clases
             }
             public InfoPlayer(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency, TimeSpan addTime)
             {
+                this.timer = timer;
                 this.ID = timer.maxID + 1;
                 timer.maxID++;
                 this.browser = browser;
@@ -133,6 +155,7 @@ namespace Ogame_Robot.Clases
 
             public UnderAttack(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency)
             {
+                this.timer = timer;
                 this.ID = timer.maxID+1;
                 timer.maxID++;
                 this.browser = browser;
@@ -141,6 +164,7 @@ namespace Ogame_Robot.Clases
             }
             public UnderAttack(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency, TimeSpan addTime)
             {
+                this.timer = timer;
                 this.ID = timer.maxID + 1;
                 timer.maxID++;
                 this.browser = browser;
@@ -171,6 +195,7 @@ namespace Ogame_Robot.Clases
 
             public FarmInactive(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency)
             {
+                this.timer = timer;
                 this.ID = timer.maxID + 1;
                 timer.maxID++;
                 this.browser = browser;
@@ -179,6 +204,7 @@ namespace Ogame_Robot.Clases
             }
             public FarmInactive(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency, TimeSpan addTime)
             {
+                this.timer = timer;
                 this.ID = timer.maxID + 1;
                 timer.maxID++;
                 this.browser = browser;
@@ -188,9 +214,24 @@ namespace Ogame_Robot.Clases
             }
             public override TimeSpan CallFunction()
             {
-
-
-                browser.FarmInactive(1, 200, 0.0, false, 18, 3, 450);
+                string settings = DataBase.InicializationFile.getAddLine("farminactive");
+                if (settings != null)
+                {
+                    if (settings =="False")
+                    {
+                        timer.packedFunctions.RemoveAt(timer.PositionOfFciByID(ID));
+                    }
+                    else
+                    {                        
+                        List<string> settings2 = new List<string>( settings.Split(','));
+                        browser.FarmInactive(Convert.ToInt32(settings2[0]), Convert.ToInt32(settings2[1]), Convert.ToDouble(settings2[2], System.Globalization.CultureInfo.InvariantCulture), Convert.ToBoolean(settings2[3], System.Globalization.CultureInfo.InvariantCulture), Convert.ToInt32(settings2[4]), Convert.ToInt32(settings2[5]), Convert.ToInt32(settings2[6]));
+                        standardFrequency = TimeSpan.FromHours(Convert.ToDouble(settings2[7], System.Globalization.CultureInfo.InvariantCulture));
+                    }
+                }
+                else
+                {
+                    browser.FarmInactive(1, 200, 0.0, false, 18, 3, 450);
+                }
 
 
                 numberOfCall++;

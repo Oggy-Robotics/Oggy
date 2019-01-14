@@ -1280,10 +1280,7 @@ namespace Ogame_Robot.Clases
             return planets;
         }
 
-        public bool FleetSend(Coordinates coordinatesFrom, int[] fleet, Coordinates coordinatesTo, byte speed, byte mision, Resources resources)  //fleet=> -1 = max mnozství typu lodě    //int[] fleet,int planetFrom,bool moonFrom, int planetTo, bool moonTo
-        {
-            return FleetSend(coordinatesFrom, fleet, coordinatesTo, speed, mision, resources, false,0);//zakazuje snižení rychlosti
-        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -1295,7 +1292,7 @@ namespace Ogame_Robot.Clases
         /// <param name="mision"></param>
         /// <param name="resources"></param>
         /// <returns></returns>
-        public bool FleetSend(Coordinates coordinatesFrom, int[] fleet, Coordinates coordinatesTo, byte speed, byte mision, Resources resources,bool forced, int minimalspeed)  //fleet=> -1 = max mnozství typu lodě    //int[] fleet,int planetFrom,bool moonFrom, int planetTo, bool moonTo
+        public bool FleetSend(Coordinates coordinatesFrom, int[] fleet, Coordinates coordinatesTo, byte speed, byte mision, Resources resources)  //fleet=> -1 = max mnozství typu lodě    //int[] fleet,int planetFrom,bool moonFrom, int planetTo, bool moonTo
         {
             //!nelze odesílat letku z měsíce
             //!občas může byt cena deu za přepravu větší než nakl prostor
@@ -1403,9 +1400,6 @@ namespace Ogame_Robot.Clases
                     Thread.Sleep(1000);
                 }
 
-                /*Testování deutéria by: Petr!*/
-                string dostatekDeu = "";
-
 
                 //sending fleet II
                 {
@@ -1414,7 +1408,7 @@ namespace Ogame_Robot.Clases
                     while (unloaded)
                     {
                         try
-                        {
+                        {                            
                             WaitForElement(By.Id("galaxy")).Clear();
                             unloaded = false;
                         }
@@ -1432,45 +1426,24 @@ namespace Ogame_Robot.Clases
                         WaitForElement(By.Id("mbutton")).Click();
                     if (coordinatesTo.moon == 3)
                         WaitForElement(By.Id("dbutton")).Click();
+                    WaitForElement(By.XPath(xpathFleetSpeed.Replace("&", Convert.ToString(speed)))).Click();
                     ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/form[1]/div[1]/div[4]/div[2]/table[1]/tbody[1]/tr[2]/td[1]/div[2]/a[1] //planeta vzlet
                     ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/form[1]/div[1]/div[4]/div[2]/table[1]/tbody[1]/tr[2]/td[1]/div[2]/a[2] //mesíc vzlet
-
-                    WaitForElement(By.XPath(xpathFleetSpeed.Replace("&", Convert.ToString(speed)))).Click();//zvolí speedku
-                    dostatekDeu = WaitForElement(By.XPath("//span[contains(text(),'%')]")).GetAttribute("class");//přečte atribut, ano/ne
-                    /*if force true, tak použije i nejnižší speedy*/
-                    if (forced == true & dostatekDeu != "undermark")
+                    bool unfinished = true;
+                    while (unfinished)
                     {
-                        bool escape = false;
-                        for (int i = 10; i >= minimalspeed | escape != true; i--)
+                        try
                         {
-                            if (i == minimalspeed)
-                                return false;//nebylo možné odeslat letku vůbec
-                            WaitForElement(By.XPath(xpathFleetSpeed.Replace("&", Convert.ToString(i/*a nebo speed*/)))).Click();
-                            dostatekDeu = WaitForElement(By.XPath("//span[contains(text(),'%')]")).GetAttribute("class");
-                            if (dostatekDeu == "undermark")
-                                escape = true;//pokračuj dál
+                            driver.FindElement(By.XPath(relxpathFleetNextButon1_2)).Click();
+                            unfinished = false;
                         }
-                    }
-
-                    if (dostatekDeu=="undermark")
-                    {/*Klasickej Tomův kód:   */
-                        bool unfinished = true;
-                        while (unfinished)
-                        {
-                            try
-                            {
-                                driver.FindElement(By.XPath(relxpathFleetNextButon1_2)).Click();
-                                unfinished = false;
-                            }
-                            catch (Exception)
-                            { }
-                        }
+                        catch (Exception)
+                        { }
                     }
                     Thread.Sleep(1000);
                 }
 
                 //sending fleet III
-                if (dostatekDeu == "undermark")
                 {
                     bool unloaded = true;
                     while (unloaded)

@@ -34,6 +34,22 @@ namespace Ogame_Robot.Clases
                 FirefoxOptions options = new FirefoxOptions();
                 FirefoxProfile jmeno_profilu = new FirefoxProfile(@"Profil\mkd2wx0g.testUV");
                 options.Profile = jmeno_profilu;
+                //proxy
+
+                for (int i = 0; i < DataBase.dataBase.inicializationFile.addLines.Count(); i++)
+                {
+                    if (DataBase.dataBase.inicializationFile.addLines[i].Contains("proxy"))
+                    {
+                        string adress1 = DataBase.dataBase.inicializationFile.addLines[i].Split('=')[1];
+                        Proxy proxy = new Proxy();
+                        proxy.HttpProxy = adress1;
+                        proxy.FtpProxy = adress1;
+                        proxy.SslProxy = adress1;
+                        jmeno_profilu.SetProxyPreferences(proxy);
+                    }
+                }
+
+
                 //načtení hlavní stánky s přihlášením
                 this.driver = new FirefoxDriver(options);
                 driver.Url = Login.urlMain;

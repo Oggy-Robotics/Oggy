@@ -136,7 +136,7 @@ namespace Ogame_Robot.Clases
                         action.MoveToElement(driver.FindElement(By.XPath((FleetPanel.Table.Replace("$", Convert.ToString(line)).Replace("&", Convert.ToString(FleetPanel.icon_movement)))))).Perform();
 
 
-                        while (hided)
+                        while (hided)//!if astrofizik is 0 or low it get stopped here-any info abaout units-no clickable element
                         {
                             try
                             {

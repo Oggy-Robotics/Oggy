@@ -30,6 +30,31 @@ namespace Ogame_Robot.Clases
             public bool autologin;
 
             public List<string> addLines = new List<string>();
+
+
+
+            public static string getAddLine(string nameOfProperty)
+            {
+                for (int i = 0; i < DataBase.dataBase.inicializationFile.addLines.Count(); i++)
+                {
+                    if (DataBase.dataBase.inicializationFile.addLines[i].Contains(nameOfProperty+"="))
+                    {
+                        return DataBase.dataBase.inicializationFile.addLines[i].Split('=')[1];
+                    }
+                }
+                return null;
+            }
+            public static List<string> getAddLine(string nameOfProperty,char split)
+            {
+                for (int i = 0; i < DataBase.dataBase.inicializationFile.addLines.Count(); i++)
+                {
+                    if (DataBase.dataBase.inicializationFile.addLines[i].Contains(nameOfProperty + "="))
+                    {
+                        return new List<string>( DataBase.dataBase.inicializationFile.addLines[i].Split('=')[1].Split(split));
+                    }
+                }
+                return null;
+            }
         } 
         public static void Inicialize()
         {

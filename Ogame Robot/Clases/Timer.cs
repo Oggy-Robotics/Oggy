@@ -188,6 +188,8 @@ namespace Ogame_Robot.Clases
             }
             public override TimeSpan CallFunction()
             {
+
+
                 browser.FarmInactive(1, 200, 0.0, false, 18, 3, 450);
 
 

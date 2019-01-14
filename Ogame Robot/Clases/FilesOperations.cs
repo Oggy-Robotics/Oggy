@@ -138,7 +138,7 @@ namespace Ogame_Robot.Clases
 
             }
 
-        }
+        }     
 
 
         public static void ErrorLogFileAddError(Exception exception)
@@ -152,7 +152,6 @@ namespace Ogame_Robot.Clases
             }
 
         }
-
         public static void ErrorLogFileAddLines(string[] lines )
         {
             using (StreamWriter stream = File.AppendText(pathErrorLog))
@@ -164,6 +163,9 @@ namespace Ogame_Robot.Clases
             }
 
         }
+
+
+
 
     }
 }

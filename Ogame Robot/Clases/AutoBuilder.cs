@@ -75,7 +75,7 @@ namespace Ogame_Robot.Clases
                     }
                     else { return standardFrequency; }
                 }
-
+                return standardFrequency;
             }
         }
 

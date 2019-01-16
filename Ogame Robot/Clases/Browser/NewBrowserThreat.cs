@@ -47,7 +47,7 @@ namespace Ogame_Robot.Clases
             Buildings buildings = new Buildings(browser);
             browser.StartBrowser();
             browser.Loggin();
-            browser.LogginUniverse();
+            browser.LogginUniverse("2");
 
             browser.UnderAttack();
             //browser.FarmInactive(1, 160, 0.2, true, 12, 3,450);

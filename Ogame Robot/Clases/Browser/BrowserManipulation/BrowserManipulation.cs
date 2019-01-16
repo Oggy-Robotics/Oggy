@@ -89,23 +89,119 @@ namespace Ogame_Robot.Clases
             IWebElement login = driver.FindElement(By.Id(Login.idloginSubmit));
             login.Click();
 
+            //new additional view for loggin
+            bool unloaded = true;
+            int counter = 0;
+            while (unloaded)
+            {
+                try
+                {
+                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                    driver.FindElement(By.Id("joinGame"));//test if player was redirected to additional loggin
+                    WaitForElement(By.XPath(Login.relxpathPlayNow)).Click();
+                    unloaded = false;
+                }
+                catch (Exception)
+                {
+                    if (counter > 2)
+                        unloaded = false;
+                    counter++;
+                    
+                }
+            }
 
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(50));
             wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.Id("accountlist")));
             Thread.Sleep(waitMilisec);
 
+
+
+
         }
-
-        public void LogginUniverse()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name">name,number,//null,""=1.</param>
+        public void LogginUniverse(string name)
         {
+            //waiter for page loaded
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(50));
+            wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.Id("accountlist")));
+            Thread.Sleep(waitMilisec);
 
-            IWebElement logginuniversebutton = driver.FindElement(By.XPath("html/body/div/div/div/div[2]/section/div[2]/div/div/div/div[2]/div/div/div[11]/button"));
+            int orderCounter = 1;
+            bool extractFromIniFile = false;
+            bool extractFromName = true;
+
+            if (name != null)
+            {
+                if (name != "")
+                {
+                    int newNumber;
+                    if (int.TryParse(name, out newNumber))
+                    {
+                        orderCounter = newNumber;
+                        extractFromName = false;
+                    }
+                    
+                }
+                else
+                {
+                    extractFromIniFile = true;
+                    extractFromName = true;
+                }
+            }
+            else
+            {
+                extractFromIniFile = true;
+                extractFromName = true;
+            }
+            if (extractFromIniFile)
+            {
+                string settings = DataBase.InicializationFile.getAddLine("loginUniverse");
+                if (settings != null)
+                {
+                    name = settings;
+                    if (name.Contains(','))
+                    {
+                        name = name.Split(',')[0];
+                    }
+                }
+                else
+                {
+                    extractFromName = false;
+                }
+            }
+            if (extractFromName)
+            {
+                try
+                {
+                    bool unfound = true;
+                    while (unfound)
+                    {
+                        if (driver.FindElement(By.XPath(Login.relxpathPlayOnUniverseName.Replace("&", Convert.ToString(orderCounter)))).Text == name)
+                        {
+                            unfound = false;
+                            orderCounter--;
+                        }
+                        orderCounter++;
+                    }
+                }
+                catch (Exception e)
+                {
+                    FilesOperations.ErrorLogFileAddError(e);
+                    FilesOperations.ErrorLogFileAddLines(new string[] { "probably wrong universe name. Looking for:" + name });
+                }
+            }
+
+
+            IWebElement logginuniversebutton = driver.FindElement(By.XPath(Login.relxpathPlayOnUniverseButton.Replace("&", Convert.ToString(orderCounter))));
             logginuniversebutton.Click();
             driver.SwitchTo().Window(driver.WindowHandles[1]);
 
 
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(50));
-            wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.XPath(Overview.xpathPlanetList)));
+            WebDriverWait wait1 = new WebDriverWait(driver, TimeSpan.FromSeconds(50));
+            wait1.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.XPath(Overview.xpathPlanetList)));
             Thread.Sleep(waitMilisec);
 
             //close UniView info panel

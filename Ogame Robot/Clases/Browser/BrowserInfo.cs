@@ -16,6 +16,15 @@ namespace Ogame_Robot.Clases
             public static string urlMain = "https://cz.ogame.gameforge.com/";
             public static string idlogintab = "ui-id-1";
             public static string idloginSubmit = "loginSubmit";
+            public static string relxpathPlayNow = "//button[@class='button button-primary button-lg']";
+
+            public static string relxpathPlayOnUniverseButton= "//div[@id='accountlist']//div[@class='rt-tbody']/div[&]/div[1]/div[11]/button[1]";
+            public static string relxpathPlayOnUniverseName= "//div[@id='accountlist']//div[@class='rt-tbody']/div[&]/div[1]/div[4]/div[1]";
+            ///html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/div[2]/div[1]/div[1]/div[1]/div[2]
+            ////html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1] -universeName
+            ///html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[11]/button[1] -universebutton1
+            ////html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[11]/button[1] -universebutton2
+
         }
         public class FleetPanel
         {

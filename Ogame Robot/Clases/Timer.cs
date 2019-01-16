@@ -73,7 +73,7 @@ namespace Ogame_Robot.Clases
                     DataBase.dataBase.game.browserManipulation.driver.Quit();
                     DataBase.dataBase.game.browserManipulation.StartBrowser();
                     DataBase.dataBase.game.browserManipulation.Loggin();
-                    DataBase.dataBase.game.browserManipulation.LogginUniverse();
+                    DataBase.dataBase.game.browserManipulation.LogginUniverse(null);
 
                 }
 

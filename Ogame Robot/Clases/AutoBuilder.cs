@@ -35,37 +35,47 @@ namespace Ogame_Robot.Clases
             }
             public override TimeSpan CallFunction()
             {
+                //ini loading
                 string settings = DataBase.InicializationFile.getAddLine("autobuilder");
+                bool uncancled = true;
                 int rezim = 0;
                 if (settings != null)
                 {
                     if (settings == "False")
                     {
                         timer.packedFunctions.RemoveAt(timer.PositionOfFciByID(ID));
+                        uncancled = false;
                     }
                     else
                     {
                         List<string> settings2 = new List<string>(settings.Split(','));
-                        rezim =Convert.ToInt32(settings2[0]);
-                        if (settings2.Count>1)
-                        standardFrequency = TimeSpan.FromHours(Convert.ToDouble(settings2[1], System.Globalization.CultureInfo.InvariantCulture));                        
+                        rezim = Convert.ToInt32(settings2[0]);
+                        if (settings2.Count > 1)
+                            standardFrequency = TimeSpan.FromHours(Convert.ToDouble(settings2[1], System.Globalization.CultureInfo.InvariantCulture));
+
+
+
                     }
                 }
 
-                numberOfCall++;
-                TimeSpan cas = buildings.AutomatickaStavba(buildings.browserManipulation,/*Vychozí režim*/rezim);
-                if (standardFrequency > cas)
+                if (uncancled)
                 {
-                    if (cas == TimeSpan.FromSeconds(-1))
+                    numberOfCall++;
+                    TimeSpan cas = buildings.AutomatickaStavba(buildings.browserManipulation,/*Vychozí režim*/rezim);
+                    if (standardFrequency > cas)
                     {
-                        return standardFrequency;
+                        if (cas == TimeSpan.FromSeconds(-1))
+                        {
+                            return standardFrequency;
+                        }
+                        else
+                        {
+                            return cas;
+                        }
                     }
-                    else
-                    {
-                        return cas;
-                    }
+                    else { return standardFrequency; }
                 }
-                else { return standardFrequency; }
+
             }
         }
 

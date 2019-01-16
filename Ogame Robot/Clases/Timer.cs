@@ -61,7 +61,7 @@ namespace Ogame_Robot.Clases
             int crashCounter = 0;
             while (true)
             {
-                    WaitAndCallNext(true);
+                WaitAndCallNext(true);
                 try
                 {
                 }
@@ -156,7 +156,7 @@ namespace Ogame_Robot.Clases
             public UnderAttack(Timer timer, BrowserManipulation browser, TimeSpan standardFrequency)
             {
                 this.timer = timer;
-                this.ID = timer.maxID+1;
+                this.ID = timer.maxID + 1;
                 timer.maxID++;
                 this.browser = browser;
                 this.standardFrequency = standardFrequency;
@@ -174,7 +174,25 @@ namespace Ogame_Robot.Clases
             }
             public override TimeSpan CallFunction()
             {
-                browser.UnderAttack();
+                string settings = DataBase.InicializationFile.getAddLine("underattack");
+                bool uncancled = true;
+                if (settings != null)
+                {
+                    if (settings == "False")
+                    {
+                        timer.packedFunctions.RemoveAt(timer.PositionOfFciByID(ID));
+                        uncancled = false;
+                    }
+                    else
+                    {
+                        standardFrequency = TimeSpan.FromHours(Convert.ToDouble(settings, System.Globalization.CultureInfo.InvariantCulture));
+                    }
+                }
+
+                if (uncancled)
+                {
+                    browser.UnderAttack();
+                }
 
 
                 numberOfCall++;
@@ -215,24 +233,28 @@ namespace Ogame_Robot.Clases
             public override TimeSpan CallFunction()
             {
                 string settings = DataBase.InicializationFile.getAddLine("farminactive");
+                bool uncancled = true;
                 if (settings != null)
                 {
-                    if (settings =="False")
+                    if (settings == "False")
                     {
                         timer.packedFunctions.RemoveAt(timer.PositionOfFciByID(ID));
+                        uncancled = false;
                     }
                     else
                     {
-                        List<string> settings2 = new List<string>( settings.Split(','));
+                        List<string> settings2 = new List<string>(settings.Split(','));
                         browser.FarmInactive(Convert.ToInt32(settings2[0]), Convert.ToInt32(settings2[1]), Convert.ToDouble(settings2[2], System.Globalization.CultureInfo.InvariantCulture), Convert.ToBoolean(settings2[3], System.Globalization.CultureInfo.InvariantCulture), Convert.ToInt32(settings2[4]), Convert.ToInt32(settings2[5]), Convert.ToInt32(settings2[6]));
                         if (settings2.Count > 7)
                             standardFrequency = TimeSpan.FromHours(Convert.ToDouble(settings2[7], System.Globalization.CultureInfo.InvariantCulture));
                     }
                 }
-                else
+
+                if (uncancled)
                 {
                     browser.FarmInactive(1, 200, 0.0, false, 18, 3, 450);
                 }
+                
 
 
                 numberOfCall++;

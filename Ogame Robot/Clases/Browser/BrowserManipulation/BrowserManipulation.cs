@@ -103,14 +103,14 @@ namespace Ogame_Robot.Clases
                 }
                 catch (Exception)
                 {
-                    if (counter > 2)
+                    if (counter > 3)//3sec wait for element if ewen exist
                         unloaded = false;
                     counter++;
                     
                 }
             }
 
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(50));
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(2));
             wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.Id("accountlist")));
             Thread.Sleep(waitMilisec);
 

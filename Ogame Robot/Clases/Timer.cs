@@ -222,10 +222,11 @@ namespace Ogame_Robot.Clases
                         timer.packedFunctions.RemoveAt(timer.PositionOfFciByID(ID));
                     }
                     else
-                    {                        
+                    {
                         List<string> settings2 = new List<string>( settings.Split(','));
                         browser.FarmInactive(Convert.ToInt32(settings2[0]), Convert.ToInt32(settings2[1]), Convert.ToDouble(settings2[2], System.Globalization.CultureInfo.InvariantCulture), Convert.ToBoolean(settings2[3], System.Globalization.CultureInfo.InvariantCulture), Convert.ToInt32(settings2[4]), Convert.ToInt32(settings2[5]), Convert.ToInt32(settings2[6]));
-                        standardFrequency = TimeSpan.FromHours(Convert.ToDouble(settings2[7], System.Globalization.CultureInfo.InvariantCulture));
+                        if (settings2.Count > 7)
+                            standardFrequency = TimeSpan.FromHours(Convert.ToDouble(settings2[7], System.Globalization.CultureInfo.InvariantCulture));
                     }
                 }
                 else

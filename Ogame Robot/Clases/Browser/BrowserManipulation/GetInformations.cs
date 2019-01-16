@@ -278,7 +278,7 @@ namespace Ogame_Robot.Clases
         }
 
         public int InfoPlayerNumberOfPlanets()
-        {
+        {            
             return Convert.ToInt32(WaitForElement(By.XPath(Overview.xpathPlanetsAmounth)).Text.Split('/')[0]);
         }
         public List<Coordinates> InfoPlayerCoordinatesOfPlanets()

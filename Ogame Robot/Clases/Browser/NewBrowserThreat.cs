@@ -47,7 +47,7 @@ namespace Ogame_Robot.Clases
             Buildings buildings = new Buildings(browser);
             browser.StartBrowser();
             browser.Loggin();
-            browser.LogginUniverse("2");
+            browser.LogginUniverse(null);
 
             browser.UnderAttack();
             //browser.FarmInactive(1, 160, 0.2, true, 12, 3,450);
@@ -92,8 +92,8 @@ namespace Ogame_Robot.Clases
 
             //test automatu
             Timer.FarmInactive farmInactive = new Timer.FarmInactive(DataBase.dataBase.game.timer, browser, TimeSpan.FromHours(3.5));//farming
-            Timer.UnderAttack underAttack = new Timer.UnderAttack(DataBase.dataBase.game.timer, browser, TimeSpan.FromMinutes(10));//fleetsave-unfinished
-            //Timer.AutoBuilder autoBuilder = new Timer.AutoBuilder(DataBase.dataBase.game.timer, buildings, TimeSpan.FromMinutes(20));//Autobuilder! ^^
+            Timer.UnderAttack underAttack = new Timer.UnderAttack(DataBase.dataBase.game.timer, browser, TimeSpan.FromMinutes(80));//fleetsave-unfinished
+            Timer.AutoBuilder autoBuilder = new Timer.AutoBuilder(DataBase.dataBase.game.timer, buildings, TimeSpan.FromMinutes(60));//Autobuilder! ^^
             DataBase.dataBase.game.timer.Start();//start of the Repeater
 
         }

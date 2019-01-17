@@ -38,7 +38,7 @@ namespace Ogame_Robot.Clases
                 //ini loading
                 string settings = DataBase.InicializationFile.getAddLine("autobuilder");
                 bool uncancled = true;
-                int rezim = 0;
+                int rezim = 2;
                 if (settings != null)
                 {
                     if (settings == "False")
@@ -62,6 +62,7 @@ namespace Ogame_Robot.Clases
                 {
                     numberOfCall++;
                     TimeSpan cas = buildings.AutomatickaStavba(buildings.browserManipulation,/*Vychozí režim*/rezim);
+                    cas.Add(TimeSpan.FromSeconds(5));
                     if (standardFrequency > cas)
                     {
                         if (cas == TimeSpan.FromSeconds(-1))

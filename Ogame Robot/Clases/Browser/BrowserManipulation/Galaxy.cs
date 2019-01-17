@@ -174,8 +174,8 @@ namespace Ogame_Robot.Clases
                                 }
                                 if (position.playerExtraInfo == "(i)" || position.playerExtraInfo == "(I)")
                                 {
-                                    Thread.Sleep(500);
                                     driver.FindElement(By.XPath(Galaxy.xpathTableSendSpy.Replace("&", Convert.ToString(i)))).Click();
+                                    Thread.Sleep(500);
                                     Thread.Sleep(500);
                                 }
 

@@ -651,7 +651,7 @@ namespace Ogame_Robot.Clases
                 while (i)
                 {
                     try
-                    {
+                    {//autologout needed relog
                         if (WaitForElement(By.XPath(Messages.xpathType.Replace('&', '1'))).GetAttribute("aria-selected") == "true")
                             i = false;
                     }

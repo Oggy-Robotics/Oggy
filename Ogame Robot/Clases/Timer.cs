@@ -61,9 +61,9 @@ namespace Ogame_Robot.Clases
             int crashCounter = 0;
             while (true)
             {
-                WaitAndCallNext(true);
                 try
                 {
+                WaitAndCallNext(true);
                 }
                 catch (Exception e)
                 {

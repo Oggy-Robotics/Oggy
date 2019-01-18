@@ -85,7 +85,7 @@ namespace Ogame_Robot.Clases
             //buildings.Inicialization();
 
             //end of code zarážka
-            
+
 
 
 

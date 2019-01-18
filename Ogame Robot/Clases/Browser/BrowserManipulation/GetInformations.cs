@@ -63,8 +63,8 @@ namespace Ogame_Robot.Clases
                     }
                     catch (Exception)
                     {
-                        if(counter>3)
-                        driver.FindElement(By.XPath(FleetPanel.panel)).Click();
+                        if (counter > 3)
+                            driver.FindElement(By.XPath(FleetPanel.panel)).Click();
                         counter++;
                     }
                 }
@@ -121,7 +121,7 @@ namespace Ogame_Robot.Clases
                                 string test = driver.FindElement(By.XPath(FleetPanel.Table.Replace("$", Convert.ToString(line)).Replace("&", Convert.ToString(FleetPanel.missionFleet)) + "/img[1]")).GetAttribute("src");
                                 ;
                                 break;
-                                
+
                         }
 
 
@@ -132,7 +132,7 @@ namespace Ogame_Robot.Clases
                         Actions action = new Actions(driver);
 
                         //if player dont have spy lv
-                        if (driver.FindElement(By.XPath(FleetPanel.Table.Replace("$", Convert.ToString(line)).Replace("&", Convert.ToString(FleetPanel.detailsFleet)))).Text.Length<2)
+                        if (driver.FindElement(By.XPath(FleetPanel.Table.Replace("$", Convert.ToString(line)).Replace("&", Convert.ToString(FleetPanel.detailsFleet)))).Text.Length < 2)
                         {
                             hided = false;
                         }
@@ -278,7 +278,7 @@ namespace Ogame_Robot.Clases
         }
 
         public int InfoPlayerNumberOfPlanets()
-        {            
+        {
             return Convert.ToInt32(WaitForElement(By.XPath(Overview.xpathPlanetsAmounth)).Text.Split('/')[0]);
         }
         public List<Coordinates> InfoPlayerCoordinatesOfPlanets()
@@ -626,7 +626,7 @@ namespace Ogame_Robot.Clases
                 ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[1]/div[1]/div[1]/a[2]
                 ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[2]
 
-                string xpath1 = Hangar.relxpathHangar.Replace("XXX", Convert.ToString(Hangar.shipDetail[i-1]));//more stable-ewen for build in proces
+                string xpath1 = Hangar.relxpathHangar.Replace("XXX", Convert.ToString(Hangar.shipDetail[i - 1]));//more stable-ewen for build in proces
                 //string xpath1 = Hangar.xpathHangar.Replace("$", Convert.ToString(b)).Replace("&", Convert.ToString(a));//počet lodí
                 string xpath2 = Hangar.xpathHangarInBuild.Replace("$", Convert.ToString(b)).Replace("&", Convert.ToString(a));//in process
                 IWebElement webElement;//Text = "1\r\n2"

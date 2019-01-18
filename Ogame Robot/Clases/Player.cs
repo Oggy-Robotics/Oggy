@@ -14,7 +14,7 @@ namespace Ogame_Robot.Clases
         //public Science science;
         public Level[] research;
         public List<UnderAttack> underAtack = new List<UnderAttack>();
-     
+
 
 
         public class Planet
@@ -44,7 +44,7 @@ namespace Ogame_Robot.Clases
 
             public int[] fleet;
 
-            public int[] defence;            
+            public int[] defence;
         }
 
     }

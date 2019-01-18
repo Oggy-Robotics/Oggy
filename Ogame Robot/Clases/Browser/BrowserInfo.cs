@@ -8,7 +8,7 @@ namespace Ogame_Robot.Clases
 {
     public class BrowserInfo
     {
-        
+
         public class Login
         {
             public static string idusernameLogin = "usernameLogin";
@@ -18,8 +18,8 @@ namespace Ogame_Robot.Clases
             public static string idloginSubmit = "loginSubmit";
             public static string relxpathPlayNow = "//button[@class='button button-primary button-lg']";
 
-            public static string relxpathPlayOnUniverseButton= "//div[@id='accountlist']//div[@class='rt-tbody']/div[&]/div[1]/div[11]/button[1]";
-            public static string relxpathPlayOnUniverseName= "//div[@id='accountlist']//div[@class='rt-tbody']/div[&]/div[1]/div[4]/div[1]";
+            public static string relxpathPlayOnUniverseButton = "//div[@id='accountlist']//div[@class='rt-tbody']/div[&]/div[1]/div[11]/button[1]";
+            public static string relxpathPlayOnUniverseName = "//div[@id='accountlist']//div[@class='rt-tbody']/div[&]/div[1]/div[4]/div[1]";
             ///html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/div[2]/div[1]/div[1]/div[1]/div[2]
             ////html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1] -universeName
             ///html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[11]/button[1] -universebutton1
@@ -73,7 +73,7 @@ namespace Ogame_Robot.Clases
             public static string relxpathGo = "//div[@class='btn_blue']";
             public static string xpathGo = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/form[1]/div[1]";
             public static string idGalaxyLoading = "id='galaxyLoading'";
-             
+
 
             ////table[@id='galaxytable']//tbody         //-shortage
             //planets with planet / without planet
@@ -83,11 +83,11 @@ namespace Ogame_Robot.Clases
             ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[4]/div[1]/table[1]/tbody[1]/tr[10]/td[2]/div[1]/a[1]/img[1]
             ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[4]/div[1]/table[1]/tbody[1]/tr[5]/td[2]
             ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[4]/div[1]/table[1]/tbody[1]/tr[15]/td[2]
-            
+
             //activity on planet
             public static string xpathTablePlanetExistedActivity = "//table[@id='galaxytable']//tbody[1]/tr[&]/td[2]/div[1]/div[1]/img[1]";
             ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[4]/div[1]/table[1]/tbody[1]/tr[4]/td[2]/div[1]/div[1]/img[1]  //player is now activ
-            
+
             //moon with/without
             public static string xpathTableMoonExisted = "//table[@id='galaxytable']//tbody[1]/tr[&]/td[4]/a[1]/div[1]";
             public static string xpathTableMoonUnknown = "//table[@id='galaxytable']//tbody[1]/tr[&]/td[4]";
@@ -95,14 +95,14 @@ namespace Ogame_Robot.Clases
             ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[4]/div[1]/table[1]/tbody[1]/tr[7]/td[4]/a[1]/div[1]
             ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[4]/div[1]/table[1]/tbody[1]/tr[1]/td[4]
             ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[4]/div[1]/table[1]/tbody[1]/tr[15]/td[4]           
-            
+
             //derbis field
             public static string xpathTableDerbysExisted = "//table[@id='galaxytable']//tbody[1]/tr[&]/td[5]/a[1]/div[1]";
             public static string xpathTableDerbysUnknown = "//table[@id='galaxytable']//tbody[1]/tr[&]/td[5]";
             ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[4]/div[1]/table[1]/tbody[1]/tr[9]/td[5]/a[1]/div[1]
             ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[4]/div[1]/table[1]/tbody[1]/tr[1]/td[5]
             ///html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[4]/div[1]/table[1]/tbody[1]/tr[15]/td[5]            
-            
+
             //player
             public static string xpathTablePlayerMe = "//table[@id='galaxytable']//tbody[1]/tr[&]/td[6]/span[1]";
             public static string xpathTablePlayerAnother = "//table[@id='galaxytable']//tbody[1]/tr[&]/td[6]/a[1]/span[1]";
@@ -259,18 +259,18 @@ namespace Ogame_Robot.Clases
             /// 202-215 without212
             /// </summary>
             public static string relxpathAtackersFleet = "//input[@id='simulate-attackers-0-entity-&']";
-            public static string relxpathAtackerPositionGalaxi= "//input[@id='simulate-attackers-0-coords-galaxy']";
-            public static string relxpathAtackerPositionSystem= "//input[@id='simulate-attackers-0-coords-system']";
-            public static string relxpathAtackerPositionPosition= "//input[@id='simulate-attackers-0-coords-position']";
+            public static string relxpathAtackerPositionGalaxi = "//input[@id='simulate-attackers-0-coords-galaxy']";
+            public static string relxpathAtackerPositionSystem = "//input[@id='simulate-attackers-0-coords-system']";
+            public static string relxpathAtackerPositionPosition = "//input[@id='simulate-attackers-0-coords-position']";
 
-            public static string relxpathAtackerFlightTime ="//span[@id='simulate-attackers-0-flighttime']";
-            public static string relxpathAtackerFlightFuelConsumation= "//span[@id='simulate-attackers-0-consumption']";
+            public static string relxpathAtackerFlightTime = "//span[@id='simulate-attackers-0-flighttime']";
+            public static string relxpathAtackerFlightFuelConsumation = "//span[@id='simulate-attackers-0-consumption']";
 
             public static string relxpathSimulateButton = "//div[@id='simulate-button-bottom']";
             public static string relxpathLoadSpyMessageButton = "//div[@class='party-api-wrapper clearfix']//div[1]";
             public static string idLoot = "result-possible-plunder-total";
             public static string idCookie = "uv-apps-cc-agree";
-            
+
 
 
 
@@ -292,8 +292,8 @@ namespace Ogame_Robot.Clases
             public static int StorageDeuterium = 9;
         }
         public class Stations
-        {            
-            public static string xpathStations = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[&]/div[1]/div[1]/a[%]"; 
+        {
+            public static string xpathStations = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[&]/div[1]/div[1]/a[%]";
             public static string xpathStationsInUpgrade = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[&]/div[1]/div[1]/div[1]/a[2]";
             public static string xpathStationsUpgrade = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[4]/div[2]/ul[1]/li[&]/div[1]/div[1]/a[1]/img[1]";
             public static int Robot = 1;
@@ -393,7 +393,7 @@ namespace Ogame_Robot.Clases
         //start from 1
         public enum FleetMision
         {
-            expedition=1,
+            expedition = 1,
             kolonization,
             minederbys,
             transport,

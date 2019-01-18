@@ -175,7 +175,7 @@ namespace Ogame_Robot.Clases
                                 if (position.playerExtraInfo == "(i)" || position.playerExtraInfo == "(I)")
                                 {
                                     driver.FindElement(By.XPath(Galaxy.xpathTableSendSpy.Replace("&", Convert.ToString(i)))).Click();
-                                    Thread.Sleep(500);
+                                    Thread.Sleep(500);//?dvakrát po sobě-a neměl by být jeden z nich nad findelement?
                                     Thread.Sleep(500);
                                 }
 

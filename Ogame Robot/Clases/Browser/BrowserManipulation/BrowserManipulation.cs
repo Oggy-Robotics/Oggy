@@ -35,14 +35,14 @@ namespace Ogame_Robot.Clases
                 FirefoxProfile jmeno_profilu = new FirefoxProfile(@"Profil\mkd2wx0g.testUV");
                 options.Profile = jmeno_profilu;
                 //proxy
-                string proxySetting = DataBase.InicializationFile.getAddLine("proxy");
-                if (proxySetting!=null)
+                string proxySetting = Settings.getProperty("proxy");
+                if (proxySetting != null)
                 {
-                        Proxy proxy = new Proxy();
-                        proxy.HttpProxy = proxySetting;
-                        proxy.FtpProxy = proxySetting;
-                        proxy.SslProxy = proxySetting;
-                        jmeno_profilu.SetProxyPreferences(proxy);
+                    Proxy proxy = new Proxy();
+                    proxy.HttpProxy = proxySetting;
+                    proxy.FtpProxy = proxySetting;
+                    proxy.SslProxy = proxySetting;
+                    jmeno_profilu.SetProxyPreferences(proxy);
                 }
 
 
@@ -106,7 +106,7 @@ namespace Ogame_Robot.Clases
                     if (counter > 3)//3sec wait for element if ewen exist
                         unloaded = false;
                     counter++;
-                    
+
                 }
             }
 
@@ -143,7 +143,7 @@ namespace Ogame_Robot.Clases
                         orderCounter = newNumber;
                         extractFromName = false;
                     }
-                    
+
                 }
                 else
                 {
@@ -158,7 +158,7 @@ namespace Ogame_Robot.Clases
             }
             if (extractFromIniFile)
             {
-                string settings = DataBase.InicializationFile.getAddLine("loginUniverse");
+                string settings = Settings.getProperty("loginUniverse");
                 if (settings != null)
                 {
                     name = settings;
@@ -349,7 +349,7 @@ namespace Ogame_Robot.Clases
                             unfinished = false;
                         }
                         catch (Exception)
-                        {}
+                        { }
                     }
 
                     InfoMenu(Path);
@@ -374,7 +374,7 @@ namespace Ogame_Robot.Clases
         {
 
             int numberOfPlanets = InfoPlayerNumberOfPlanets();
-            
+
             //actual planet viewing
             int actualPlanet = InfoActualPlanetWiewing();
 
@@ -484,7 +484,7 @@ namespace Ogame_Robot.Clases
                         //player name
                         messageSpy.player = WaitForElement(By.XPath(Messages.xpathMessageLinePlayerName.Replace("$", Convert.ToString(i)))).Text;
                         string name = messageSpy.player;
-                        if (messageSpy.player.Count()<2)
+                        if (messageSpy.player.Count() < 2)
                             messageSpy.player = "AnyPlayer*";
                         else
                         {
@@ -597,7 +597,7 @@ namespace Ogame_Robot.Clases
                         {
                             try
                             {
-                                
+
                                 IWebElement webDriverWaitNextPage = new WebDriverWait(driver, TimeSpan.FromMilliseconds(1000)).Until(ExpectedConditions.ElementIsVisible(By.XPath(Messages.xpathPageNumber)));
 
                                 string text = webDriverWaitNextPage.Text;
@@ -644,7 +644,7 @@ namespace Ogame_Robot.Clases
             }
             if (i)
             {
-                 
+
                 WaitForElement(By.XPath(Messages.xpathMessagesIcon)).Click();
 
 
@@ -744,7 +744,7 @@ namespace Ogame_Robot.Clases
         {
             //get info
             List<Coordinates> coordinates = InfoPlayerCoordinatesOfPlanets();
-            List<GalaxySystem> galaxySystems = GalaxyScan(startingPlanet, coordinates[startingPlanet - 1], distance, 1, requestedRank,true);
+            List<GalaxySystem> galaxySystems = GalaxyScan(startingPlanet, coordinates[startingPlanet - 1], distance, 1, requestedRank, true);
             Thread.Sleep(TimeSpan.FromMinutes(2));//použít letky-start /end
             List<MessageSpy> messageSpies = GetSpyMessages(120);
             ProductionSeting productionSeting = InfoProductionSeting();
@@ -799,7 +799,7 @@ namespace Ogame_Robot.Clases
         {
             //get info
             List<Coordinates> coordinates = InfoPlayerCoordinatesOfPlanets();
-            List<GalaxySystem> galaxySystems = GalaxyScan(startingPlanet, coordinates[startingPlanet - 1], distance, 1, requestedRank,true);
+            List<GalaxySystem> galaxySystems = GalaxyScan(startingPlanet, coordinates[startingPlanet - 1], distance, 1, requestedRank, true);
             Thread.Sleep(TimeSpan.FromMinutes(2));//použít letky-start /end
             List<MessageSpy> messageSpies = GetSpyMessages(120);
             ProductionSeting productionSeting = InfoProductionSeting();
@@ -976,7 +976,7 @@ namespace Ogame_Robot.Clases
         {
             List<int> planets = new List<int>();
 
-            
+
             int amount = InfoPlayerNumberOfPlanets();
             List<Coordinates> myCoordinates = InfoPlayerCoordinatesOfPlanets();
             FleetMovements fleetMovements = InfoFleetMovement();
@@ -992,7 +992,7 @@ namespace Ogame_Robot.Clases
                             MyFleetInfo enemyFleet = Military.Military.GetMyFleetTotalInfo(false, fleetMovements.fleetMovements[i].fleetDetails);
                             MyFleetInfo myFleet = Military.Military.GetMyFleetTotalInfo(b + 1, this);
 
-                            if (2*enemyFleet.myHangarResuourcesTotal>myFleet.myHangarResuourcesTotal)//if enemy is 1/2* stronger than me I will try to save my fleet
+                            if (2 * enemyFleet.myHangarResuourcesTotal > myFleet.myHangarResuourcesTotal)//if enemy is 1/2* stronger than me I will try to save my fleet
                             {
                                 /*
                                 !save resources 
@@ -1005,11 +1005,11 @@ namespace Ogame_Robot.Clases
 
                                 //transport fleet to clossest planet in clossest system.
 
-                                ChangePlanet(b+1);
-                                GalaxySystem scannedSystem = this.GalaxyScan(myCoordinates[b].galaxy, myCoordinates[b].system,0,1000000, false);
+                                ChangePlanet(b + 1);
+                                GalaxySystem scannedSystem = this.GalaxyScan(myCoordinates[b].galaxy, myCoordinates[b].system, 0, 1000000, false);
                                 if (scannedSystem.positions.Count() > 0)//at least one planet
                                 {
-                                    if (scannedSystem.positions[0].playerName==InfoPlayerName())
+                                    if (scannedSystem.positions[0].playerName == InfoPlayerName())
                                     {
 
                                     }
@@ -1206,7 +1206,7 @@ namespace Ogame_Robot.Clases
                     while (unloaded)
                     {
                         try
-                        {                            
+                        {
                             WaitForElement(By.Id("galaxy")).Clear();
                             unloaded = false;
                         }
@@ -1310,12 +1310,12 @@ namespace Ogame_Robot.Clases
             return Convert.ToInt32(text.Replace(".", "").Replace(" ", "").Split(':')[1]);
 
         }
-        
-            /// <summary>
-            /// warious. všeobecné
-            /// </summary>
-            /// <param name="text"></param>
-            /// <returns></returns>
+
+        /// <summary>
+        /// warious. všeobecné
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
         public static int ConvertNumberFromText(string text)
         {
             if (text.Contains("M"))
@@ -1502,7 +1502,7 @@ namespace Ogame_Robot.Clases
         public List<FleetMovement> fleetMovements;
         public static FleetMovements Inicialization()
         {
-            FleetMovements fleetMovements = new FleetMovements { fleetMovements = new List<FleetMovement> () };
+            FleetMovements fleetMovements = new FleetMovements { fleetMovements = new List<FleetMovement>() };
 
             return fleetMovements;
         }

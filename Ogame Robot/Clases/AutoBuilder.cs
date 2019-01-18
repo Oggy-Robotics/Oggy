@@ -36,7 +36,7 @@ namespace Ogame_Robot.Clases
             public override TimeSpan CallFunction()
             {
                 //ini loading
-                string settings = DataBase.InicializationFile.getAddLine("autobuilder");
+                string settings = Settings.getProperty("autobuilder");
                 bool uncancled = true;
                 int rezim = 2;
                 if (settings != null)

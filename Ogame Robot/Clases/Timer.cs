@@ -254,7 +254,7 @@ namespace Ogame_Robot.Clases
 
                 if (uncancled && !AlreadyCalled)
                 {
-                    browser.FarmInactive(1, 200, 0.0, false, 18, 3, 450);
+                    browser.FarmInactive(1, 160, 0.0, false, 18, 3, 450);
                 }
 
 

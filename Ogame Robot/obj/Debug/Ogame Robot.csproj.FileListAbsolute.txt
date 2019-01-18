@@ -58,3 +58,23 @@ C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot.
 C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot.csproj.CopyComplete
 C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot.exe
 C:\Users\uživatel\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot.pdb
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\bin\Debug\Ogame Robot.exe.config
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\bin\Debug\Ogame Robot.exe
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\bin\Debug\Ogame Robot.pdb
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\bin\Debug\WebDriver.dll
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\bin\Debug\WebDriver.Support.dll
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\bin\Debug\WebDriver.xml
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\bin\Debug\WebDriver.Support.xml
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot.csprojAssemblyReference.cache
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\MainWindow.g.cs
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\App.g.cs
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot_MarkupCompile.cache
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot_MarkupCompile.lref
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\MainWindow.baml
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot.g.resources
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame_Robot.Properties.Resources.resources
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot.csproj.GenerateResource.cache
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot.csproj.CoreCompileInputs.cache
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot.csproj.CopyComplete
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot.exe
+C:\Users\FireFly\Desktop\Oggy Robotics\Oggy\Ogame Robot\obj\Debug\Ogame Robot.pdb

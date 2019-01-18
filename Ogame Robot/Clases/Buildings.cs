@@ -129,7 +129,7 @@ namespace Ogame_Robot.Clases
                         Elektrárna > Kov > krystal  */
                         {
                             //                  elek    je menší nebo roven     kovu     a nebo              elek    je menší nebo roven     krystalu
-                            if ((PlanetaHrace[a].suply[4].lv <= PlanetaHrace[a].suply[0].lv) | (PlanetaHrace[a].suply[4].lv <= PlanetaHrace[a].suply[1].lv))
+                            if ((PlanetaHrace[a].suply[3].lv <= PlanetaHrace[a].suply[0].lv) | (PlanetaHrace[a].suply[3].lv <= PlanetaHrace[a].suply[1].lv))
                             { /* pak se vylepší elektrárna */
                                 try//dá se něco postavit?
                                 {

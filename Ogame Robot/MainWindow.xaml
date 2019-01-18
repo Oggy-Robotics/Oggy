@@ -15,7 +15,7 @@
         <TextBlock Margin="10,10,10,0" TextWrapping="Wrap" Text="username" VerticalAlignment="Top" Height="16"/>
         <TextBlock Margin="10,59,10,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Height="16"/>
         <TextBox Height="23" Margin="10,80,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Name="TextBoxPassword"/>
-        <ComboBox VerticalAlignment="Bottom" Grid.Row="0"  Margin="10,0,0,274" SelectedIndex="0" Height="38" HorizontalAlignment="Left" Width="72">
+        <ComboBox VerticalAlignment="Top" Grid.Row="0"  Margin="10,108,0,0" SelectedIndex="0" Height="38" HorizontalAlignment="Left" Width="72">
             <ComboBoxItem Content="cz"/>
             <ComboBoxItem Content="en"/>
             <ComboBoxItem Content="atc"/>
@@ -23,6 +23,7 @@
         </ComboBox>
         <Button Content="Start" Margin="87,108,10,0" VerticalAlignment="Top" Height="40" Click="ButtonStartBrowser"/>
         <CheckBox Content="Autologin" Margin="10,153,10,0" VerticalAlignment="Top" Height="17" Name="Autologin"/>
+        <Button Content="AutoBuilder" Margin="10,10,462,0" VerticalAlignment="Top" Height="36" Click="ButtonShowWindowAutoBuildingsSetting" Grid.Column="1"/>
 
     </Grid>
 </Window>

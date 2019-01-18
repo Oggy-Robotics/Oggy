@@ -37,8 +37,9 @@ namespace Ogame_Robot
             }
 
             PassInicializationText();
+            DataBase.dataBase.windowCollection.Add(this);
 
-        } 
+        }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -59,15 +60,33 @@ namespace Ogame_Robot
                 DataBase.dataBase.inicializationFile.autologin = (bool)Autologin.IsChecked;
 
                 FilesOperations.InicializationFileSave();
-                if(DataBase.dataBase.thread == null)
-                NewBrowserThreat.Start();
+                if (DataBase.dataBase.thread == null)
+                    NewBrowserThreat.Start();
             }
         }
         private void PassInicializationText()
         {
-             TextBoxPassword.Text=DataBase.dataBase.inicializationFile.password ;
-              TextBoxUsername.Text=DataBase.dataBase.inicializationFile.username;
-              Autologin.IsChecked=DataBase.dataBase.inicializationFile.autologin;
+            TextBoxPassword.Text = DataBase.dataBase.inicializationFile.password;
+            TextBoxUsername.Text = DataBase.dataBase.inicializationFile.username;
+            Autologin.IsChecked = DataBase.dataBase.inicializationFile.autologin;
         }
+        private void ButtonShowWindowAutoBuildingsSetting(object sender, RoutedEventArgs e)
+        {
+            bool contained = false;
+            foreach (Window item in DataBase.dataBase.windowCollection)
+            {
+                if (item is WindowAutoBuildingsSetting)
+                {
+                    contained = true;
+                }
+            }
+            if (!contained)
+            {
+                WindowAutoBuildingsSetting win2 = new WindowAutoBuildingsSetting();
+                win2.Show();
+            }
+
+        }
+
     }
 }

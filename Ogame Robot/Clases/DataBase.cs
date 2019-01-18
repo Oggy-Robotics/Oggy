@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Collections;
+using System.Windows;
 
 namespace Ogame_Robot.Clases
 {
@@ -15,12 +16,14 @@ namespace Ogame_Robot.Clases
         public InicializationFile inicializationFile = new InicializationFile();
         public Game game = new Game();
 
+        public List<Window> windowCollection = new List<Window>();
+
 
         public class Game
         {
             public Timer timer = new Timer();
             public BrowserManipulation browserManipulation;
-
+            
         }
 
 
@@ -68,7 +71,7 @@ namespace Ogame_Robot.Clases
             {
                 DataBase.dataBase = dataBase;
             }
-
+            
 
         }
 
@@ -130,7 +133,7 @@ namespace Ogame_Robot.Clases
 
 
         public static string getProperty(string nameOfSetting)
-        {
+        {            
             try
             {
                 return DataBase.dataBase.inicializationFile.settings.properties[DataBase.dataBase.inicializationFile.settings.settings.Values.ToList().IndexOf(nameOfSetting.ToLower())];

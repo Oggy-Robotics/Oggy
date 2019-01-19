@@ -21,18 +21,23 @@ namespace Ogame_Robot.Clases
             this.browser = browser;
             OpenTrashSim();
         }
+        /// <summary>
+        /// do nothing, uninicialized
+        /// </summary>
+        public TrashSim()
+        { }
         public bool OpenTrashSim()
         {
             if (TrashDriver == null)
             {
                 TrashDriver = new FirefoxDriver();
-            TrashDriver.Navigate().GoToUrl(TrashSimLib.mainPage);
-            WaitForElement(By.XPath(TrashSimLib.relxpathdefendersAPI), TrashDriver);
+                TrashDriver.Navigate().GoToUrl(TrashSimLib.mainPage);
+                WaitForElement(By.XPath(TrashSimLib.relxpathdefendersAPI), TrashDriver);
             }
 
             return true;
         }
-        public bool SimulateBattle(string API, int[] myfleet, int[] myResearch, Coordinates coordinates)
+        public SimulationResult SimulateBattle(string API, int[] myfleet, int[] myResearch, Coordinates coordinates)
         {
             try
             {
@@ -110,16 +115,53 @@ namespace Ogame_Robot.Clases
                 catch (Exception)
                 { }
             }
+            //is simulation completed?
+            unloaded = true;
+            while (unloaded)
+            {
+                try
+                {
+                    if (Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.idSimulationCurrent)).Text)
+                    == Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.idSimulationTotal)).Text))
+                        unloaded = false;
+                    Thread.Sleep(TimeSpan.FromMilliseconds(200));
+                }
+                catch (Exception)
+                { } 
+            }
+
+            SimulationResult simulationResult = new SimulationResult();
+
+            simulationResult.attackerWinn = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathAttackerWinn)).Text.Replace("%", ""));
+            simulationResult.defenderWinn = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathDefenderWinn)).Text.Replace("%", ""));
+            simulationResult.indecisively = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathIndecisively)).Text.Replace("%", ""));
+            simulationResult.attackerLoss = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathAttackerLoss)).Text.Replace(".", ""));
+            simulationResult.defenderLoss = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathDefenderLoss)).Text.Replace(".", ""));
+            simulationResult.plunderTotal = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathPlunderTotal)).Text.Replace(".", ""));
+            simulationResult.posiblePlunderTotal = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathPosiblePlunderTotal)).Text.Replace(".", ""));
 
 
 
 
-            return true;
+            return simulationResult;
         }
-
-
-
-
+        
 
     }
+
+    public struct SimulationResult
+    {
+        //chanches
+        public int attackerWinn;
+        public int defenderWinn;
+        public int indecisively;
+
+        //resources totall
+        public int attackerLoss;
+        public int defenderLoss;
+        public int plunderTotal;
+        public int posiblePlunderTotal;
+
+    }
+
 }

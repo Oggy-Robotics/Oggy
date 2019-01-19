@@ -221,6 +221,7 @@ namespace Ogame_Robot.Clases
             /// $=~15-~40 =hightly unstable
             /// </summary>
             public static string xpathMessageApiNumber = "//html[1]/body[1]/div[$]/div[3]/div[1]/input[1]";
+            public static string xpathMessageApiNumberUV = "//ul[@class='tab_inner ctn_with_trash clearfix']//li[$]//div[3]//a[6]";
             public static string xpathMessageAttackAlreadyUnderAttack = "//ul[@class='tab_inner ctn_with_trash clearfix']//li[$]/div[3]/a[3]/span[1]/img[1]";
 
 
@@ -271,6 +272,16 @@ namespace Ogame_Robot.Clases
             public static string idLoot = "result-possible-plunder-total";
             public static string idCookie = "uv-apps-cc-agree";
 
+            public static string idSimulationCurrent = "simulation-current";
+            public static string idSimulationTotal = "simulation-total";
+
+            public static string relxpathAttackerWinn = "//td[@id='result-wins-attackers']";
+            public static string relxpathDefenderWinn = "//td[@id='result-wins-defenders']";
+            public static string relxpathIndecisively = "//td[@id='result-wins-draw']";
+            public static string relxpathAttackerLoss = "//td[@id='result-attackers-losses-total']";
+            public static string relxpathDefenderLoss  = "//td[@id='result-defenders-losses-total']";
+            public static string relxpathPlunderTotal = "//td[@id='result-attackers-plunder-total']";
+            public static string relxpathPosiblePlunderTotal = "//td[@id='result-possible-plunder-total']";
 
 
 

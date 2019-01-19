@@ -119,8 +119,14 @@ namespace Ogame_Robot.Clases
                             messageSpy.defenceResorces = -1;
                         }
 
-                        /*
                         //api
+                        //href="https://trashsim.universeview.be/cs?SR_KEY=sr-cz-135-f0fd2de38e3a248a1219242cb8851c2aafa17a35&utm_source=ogame&
+                        ////ul[@class='tab_inner ctn_with_trash clearfix']//li[$]//div[3]//a[6]
+                        messageSpy.api = WaitForElement(By.XPath(Messages.xpathMessageApiNumberUV.Replace("$", Convert.ToString(i)))).GetAttribute("href").Split('=')[1].Split('&')[0];
+
+
+                        /*
+                        //api=old way
                         bool api = true;
                         int cycle = 1;
                         Actions action = new Actions(driver);

@@ -48,7 +48,8 @@ namespace Ogame_Robot.Clases
 
 
                 //načtení hlavní stánky s přihlášením
-                this.driver = new FirefoxDriver(options);
+                driver = new FirefoxDriver(options);
+                driver.Manage().Window.Maximize();
                 driver.Url = Login.urlMain;
                 return true;
             }
@@ -494,7 +495,9 @@ namespace Ogame_Robot.Clases
 
             SortedList<double, MessageSpy> sortedMessages = new SortedList<double, MessageSpy>();
             int minimalHourResourcesOrigin = minimalHourResources;
-            //TrashSim trashSim = new TrashSim(this);
+            TrashSim trashSim = new TrashSim();
+            if (simulate)
+                trashSim = new TrashSim(this);
 
 
             //sorting messages
@@ -608,11 +611,15 @@ namespace Ogame_Robot.Clases
                                 FleetToSend.myHangar[(int)UnitType.SmallCargo] = sortedMessages.Values[i].lootable / myShips[(int)UnitType.SmallCargo].Capacity + 1;
 
                                 //simulation
+                                if (simulate)
+                                {
                                 int[] researchLevels = new int[research.Count()];
                                 for (int a = 0; a < research.Count(); a++)
                                 { researchLevels[a] = research[a].lv; }
 
-                                //trashSim.SimulateBattle(sortedMessages.Values[i].api, FleetToSend.myHangar, researchLevels, coordinates[startingPlanet - 1]);
+
+                                trashSim.SimulateBattle(sortedMessages.Values[i].api, FleetToSend.myHangar, researchLevels, coordinates[startingPlanet - 1]);
+                                }
 
 
                                 //sending fleet
@@ -639,7 +646,7 @@ namespace Ogame_Robot.Clases
                                 messageSpy.alreadyAttacked = 1;
 
                             }
-*/
+                */
             }
 
             //trashSim.TrashDriver.Close();

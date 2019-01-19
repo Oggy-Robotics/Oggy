@@ -2,10 +2,27 @@
 # Tento soubor .gitignore byl automaticky vytvořen aplikací Microsoft(R) Visual Studio.
 ################################################################################
 
-/Ogame Robot/bin/Debug/Inicialization.txt
-/Ogame Robot/bin
-/.vs
-/.git
-/packages
-/Ogame Robot/obj
-/Ogame Robot/Properties
+Ogame Robot/bin/Debug/Inicialization.txt
+Ogame Robot/bin*/
+.vs*/
+.git*/
+packages*/
+Ogame Robot/obj*/
+Ogame Robot/Properties*/
+build*/
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+bin/
+obj/
+Debug/
+Release/
+*.opensdf
+*.tlog
+*.log
+TestResult.xml
+*.VisualState.xml
+Version.cs
+Version.h
+Version.cpp

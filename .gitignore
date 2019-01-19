@@ -3,26 +3,12 @@
 ################################################################################
 
 Ogame Robot/bin/Debug/Inicialization.txt
-Ogame Robot/bin*/
-.vs*/
-.git*/
-packages*/
-Ogame Robot/obj*/
-Ogame Robot/Properties*/
-build*/
-*.suo
-*.user
-_ReSharper.*/
-*.sdf
-bin/
-obj/
-Debug/
-Release/
-*.opensdf
-*.tlog
-*.log
-TestResult.xml
-*.VisualState.xml
-Version.cs
-Version.h
-Version.cpp
+
+/.vs/Ogame Robot/v15/Server/sqlite3/db.lock
+/Ogame Robot/obj/*
+/Ogame Robot/bin*
+/Ogame Robot/bin/Debug/*
+/Ogame Robot/bin/Debug
+/Ogame Robot/bin/Debug/
+/.vs/*
+*.exe

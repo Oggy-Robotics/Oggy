@@ -135,8 +135,8 @@ namespace Ogame_Robot.Clases
             simulationResult.attackerWinn = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathAttackerWinn)).Text.Replace("%", ""));
             simulationResult.defenderWinn = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathDefenderWinn)).Text.Replace("%", ""));
             simulationResult.indecisively = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathIndecisively)).Text.Replace("%", ""));
-            simulationResult.attackerLoss = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathAttackerLoss)).Text.Replace(".", ""));
-            simulationResult.defenderLoss = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathDefenderLoss)).Text.Replace(".", ""));
+            simulationResult.attackerLossRes = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathAttackerLoss)).Text.Replace(".", ""));
+            simulationResult.defenderLossRes = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathDefenderLoss)).Text.Replace(".", ""));
             simulationResult.plunderTotal = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathPlunderTotal)).Text.Replace(".", ""));
             simulationResult.posiblePlunderTotal = Convert.ToInt32(TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathPosiblePlunderTotal)).Text.Replace(".", ""));
 
@@ -157,8 +157,8 @@ namespace Ogame_Robot.Clases
         public int indecisively;
 
         //resources totall
-        public int attackerLoss;
-        public int defenderLoss;
+        public int attackerLossRes;
+        public int defenderLossRes;
         public int plunderTotal;
         public int posiblePlunderTotal;
 

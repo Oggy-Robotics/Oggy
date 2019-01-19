@@ -611,20 +611,34 @@ namespace Ogame_Robot.Clases
                                 FleetToSend.myHangar[(int)UnitType.SmallCargo] = sortedMessages.Values[i].lootable / myShips[(int)UnitType.SmallCargo].Capacity + 1;
 
                                 //simulation
+                                bool uncancled = true;
                                 if (simulate)
                                 {
-                                int[] researchLevels = new int[research.Count()];
-                                for (int a = 0; a < research.Count(); a++)
-                                { researchLevels[a] = research[a].lv; }
+                                    int[] researchLevels = new int[research.Count()];
+                                    for (int a = 0; a < research.Count(); a++)
+                                    { researchLevels[a] = research[a].lv; }
 
 
-                                trashSim.SimulateBattle(sortedMessages.Values[i].api, FleetToSend.myHangar, researchLevels, coordinates[startingPlanet - 1]);
+                                    SimulationResult simulationResult = trashSim.SimulateBattle(sortedMessages.Values[i].api, FleetToSend.myHangar, researchLevels, coordinates[startingPlanet - 1]);
+                                    //fleet probably isnt strong enought
+                                    if (simulationResult.attackerWinn <= 80)
+                                    {
+                                        uncancled = false;
+                                    }
+                                    if (2 * simulationResult.attackerLossRes < simulationResult.attackerLossRes)
+                                    {
+                                        uncancled = false;
+                                    }
+
                                 }
 
 
                                 //sending fleet
-                                FleetSend(coordinates[startingPlanet], FleetToSend.myHangar, sortedMessages.Values[i].fromPlanet, 10, 8, new Resources { metal = 0, crystal = 0, deuterium = 0 });
-                                ;
+                                if (uncancled)
+                                {
+                                    FleetSend(coordinates[startingPlanet], FleetToSend.myHangar, sortedMessages.Values[i].fromPlanet, 10, 8, new Resources { metal = 0, crystal = 0, deuterium = 0 });
+                                }
+
                             }
 
 
@@ -649,7 +663,9 @@ namespace Ogame_Robot.Clases
                 */
             }
 
-            //trashSim.TrashDriver.Close();
+            if (simulate)
+                trashSim.TrashDriver.Close();
+
 
         }
 

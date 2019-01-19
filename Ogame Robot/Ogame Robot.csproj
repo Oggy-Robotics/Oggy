@@ -64,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Clases\Browser\BrowserManipulation\Messages.cs" />
     <Compile Include="Clases\Builder\ConstructionMode.cs" />
     <Compile Include="Windows\MainWindow.xaml.cs" />
     <Compile Include="Windows\WindowAutoBuildingsSetting.xaml.cs" />

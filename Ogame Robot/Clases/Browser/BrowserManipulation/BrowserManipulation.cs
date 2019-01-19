@@ -355,7 +355,7 @@ namespace Ogame_Robot.Clases
 
                     InfoMenu(Path);
 
-                    Thread.Sleep(waitMilisec);
+                    //Thread.Sleep(waitMilisec);
                 }
             }
             else
@@ -364,7 +364,7 @@ namespace Ogame_Robot.Clases
                 WaitForElement(By.XPath(SettingsSuply.relxpathFactorKey));
                 InfoMenu(Path);
 
-                Thread.Sleep(waitMilisec);
+                //Thread.Sleep(waitMilisec);
             }
         }
         /// <summary>
@@ -664,7 +664,10 @@ namespace Ogame_Robot.Clases
             }
 
             if (simulate)
-                trashSim.TrashDriver.Close();
+            {
+                trashSim.TrashDriver.Quit();
+                trashSim.TrashDriver=null;
+            }
 
 
         }

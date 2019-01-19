@@ -65,8 +65,9 @@ namespace Ogame_Robot.Clases.Military
             RegisterType( new ColonyShipInfo() );
             RegisterType( new RecyclerInfo() );
             RegisterType( new EspProbeInfo() );
+
             RegisterType( new SolarSatInfo() );
-            /*
+
             RegisterType( new RocketLauncherInfo() );
             RegisterType( new LightLaserInfo() );
             RegisterType( new HeavyLaserInfo() );
@@ -76,7 +77,6 @@ namespace Ogame_Robot.Clases.Military
             RegisterType( new SmallShieldDomeInfo() );
             RegisterType( new LargeShieldDomeInfo() );
 
-            */
         }
 
 

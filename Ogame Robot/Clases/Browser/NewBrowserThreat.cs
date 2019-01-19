@@ -50,12 +50,12 @@ namespace Ogame_Robot.Clases
             browser.LogginUniverse(null);
 
             browser.UnderAttack();
-            //browser.FarmInactive(1, 160, 0.2, true, 12, 3,450);
             //browser.InfoPlayer();
             try
             {
                 /*
-                Military.Military.GetMyFleetTotalInfo(1, browser,true);
+                Military.MyFleetInfo fl1 = Military.Military.GetMyFleetTotalInfo(1, browser);
+                Military.MyDefenceInfo df1 = Military.Military.GetMyDefenceTotalInfo(1, browser);
                 browser.GalaxyScan(1, new Coordinates { galaxy = 1, system = 446, planet = 4, moon = 0 }, 30, 1);
                 browser.GalaxyScan(1, new Coordinates { galaxy = 1, system = 10, planet = 0, moon = 0 }, new Coordinates { galaxy = 1, system = 1, planet = 0, moon = 0 },0);
                 ProductionSeting productionSeting = browser.InfoProductionSeting(2);

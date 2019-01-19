@@ -260,6 +260,7 @@ namespace Ogame_Robot.Clases
             /// 202-215 without212
             /// </summary>
             public static string relxpathAtackersFleet = "//input[@id='simulate-attackers-0-entity-&']";
+            public static string relxpathDefenderDefence = "//input[@id='simulate-defenders-0-entity-&']";
             public static string relxpathAtackerPositionGalaxi = "//input[@id='simulate-attackers-0-coords-galaxy']";
             public static string relxpathAtackerPositionSystem = "//input[@id='simulate-attackers-0-coords-system']";
             public static string relxpathAtackerPositionPosition = "//input[@id='simulate-attackers-0-coords-position']";

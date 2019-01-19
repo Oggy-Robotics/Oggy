@@ -14,22 +14,7 @@ namespace Ogame_Robot.Clases.Military
 
 
 
-        public Military Inicialization(BrowserManipulation browser)
-        {
-            Military military = new Military();
-            military.browser = browser;
-            military.research = browser.InfoResearch();
-            PlayerMilitary player = new PlayerMilitary();
-            UnitInfo unitInfo = UnitInfo.GetInfo(UnitType.Destroyer);
 
-            Wessel wessel = new Wessel();
-            wessel.cost = unitInfo.Cost;
-
-
-
-            player.UnitTypes.Add(UnitType.Destroyer, 500);
-            return military;
-        }
 
         public static UnitInfo[] GetMyFleetInfo()
         {
@@ -48,7 +33,7 @@ namespace Ogame_Robot.Clases.Military
         /// <returns></returns>
         public static MyFleetInfo GetMyFleetTotalInfo(int planet, BrowserManipulation browser)
         {
-            return GetMyFleetTotalInfo(false, browser.InfoHangar());
+            return GetMyFleetTotalInfo(false, browser.InfoHangar(planet));
         }
         public static MyFleetInfo GetMyFleetTotalInfo(bool multiplier,int[] fleetOrigin)
         {
@@ -85,10 +70,56 @@ namespace Ogame_Robot.Clases.Military
 
             return myFleet;
         }
+
         public static UnitInfo[] GetMyDefenceInfo()
         {
-            return null;
+            UnitInfo[] myDefence = new UnitInfo[8];
+            for (int i = 0; i < 8; i++)
+            {
+                myDefence[i] = UnitInfo.GetInfo((UnitType)(i+14));
+            }
+            return myDefence;
         }
+        public static MyDefenceInfo GetMyDefenceTotalInfo(int planet, BrowserManipulation browser)
+        {
+            return GetMyDefenceTotalInfo(false, browser.InfoDefence(planet));
+        }
+        public static MyDefenceInfo GetMyDefenceTotalInfo(bool multiplier, int[] defenceOrigin)
+        {
+            MyDefenceInfo myDefence = MyDefenceInfo.Inicialization();
+            //retype from [9] to [8]
+            int[] defence = new int[8];
+            for (int i = 0; i < defence.Count(); i++)
+            {
+                defence[i] = defenceOrigin[i];
+            }
+
+            myDefence.MyDefence = defence;
+            UnitInfo[] myDefenceUnits = GetMyDefenceInfo();
+            if (multiplier)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    myDefence.ResuourcesTypeInfo[i] = myDefenceUnits[i].Cost.metal + Convert.ToInt32(myDefenceUnits[i].Cost.crystal * 1.5) + myDefenceUnits[i].Cost.deuterium * 3;
+                    myDefence.ResuourcesTypeTotal[i] = myDefence.ResuourcesTypeInfo[i] * myDefence.MyDefence[i];
+                    myDefence.myDefenceResuourcesTotal += myDefence.ResuourcesTypeTotal[i];
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    myDefence.ResuourcesTypeInfo[i] = myDefenceUnits[i].Cost.metal + myDefenceUnits[i].Cost.crystal + myDefenceUnits[i].Cost.deuterium;
+                    myDefence.ResuourcesTypeTotal[i] = myDefence.ResuourcesTypeInfo[i] * myDefence.MyDefence[i];
+                    myDefence.myDefenceResuourcesTotal += myDefence.ResuourcesTypeTotal[i];
+                }
+            }
+
+            myDefence.resuourcesTypeTotalPercentage = MyDefenceInfo.ResuourcesTypeTotalPercentage(myDefence.MyDefence);
+
+            return myDefence;
+        }
+
     }
 
     public struct MyFleetInfo
@@ -166,40 +197,82 @@ namespace Ogame_Robot.Clases.Military
             return myFleet.resuourcesTypeTotalPercentage;
         }
     }
-
-
-    /// <summary>
-    /// start from 0
-    /// </summary>
-    public enum Fleet
+    public struct MyDefenceInfo
     {
-        Fighter = 0,
-        HeavyFighter,
-        Cruiser,
-        BattleShip,
-        BattleCruiser,
-        Bomber,
-        Destorier,
-        DeatStar,
-        Transport,
-        LargeTransport,
-        ColonizationShip,
-        Recycler,
-        SpyProbe,
-        SolarSatelite
+        /// <summary>
+        /// amouth
+        /// </summary>
+        public int[] MyDefence;
+        public int[] ResuourcesTypeInfo;
+        public int[] ResuourcesTypeTotal;
+        /// <summary>
+        /// even the spy probes and satelits
+        /// </summary>
+        public int myDefenceResuourcesTotal;
+
+        ///// <summary>
+        ///// 0.10 =10% surek z celku
+        ///// </summary>
+        public double[] resuourcesTypeTotalPercentage;
+
+        public static MyDefenceInfo Inicialization()
+        {
+            MyDefenceInfo myDefenceInfo;
+            myDefenceInfo.MyDefence = new int[8];
+            myDefenceInfo.ResuourcesTypeInfo = new int[8];
+            myDefenceInfo.ResuourcesTypeTotal = new int[8];
+            myDefenceInfo.resuourcesTypeTotalPercentage = new double[8];
+            myDefenceInfo.myDefenceResuourcesTotal = 0;
+            return myDefenceInfo;
+        }
+
+        public static double[] ResuourcesTypeTotalPercentage(int[] defences)
+        {
+            return ResuourcesTypeTotalPercentage(defences, false);
+        }
+        public static double[] ResuourcesTypeTotalPercentage(int[] defences, bool multiplier)
+        {
+            MyDefenceInfo myDefence = MyDefenceInfo.Inicialization();
+
+            myDefence.MyDefence = defences;
+            UnitInfo[] myDefences = Military.GetMyDefenceInfo();
+
+            if (multiplier)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    myDefence.ResuourcesTypeInfo[i] = myDefences[i].Cost.metal + Convert.ToInt32(myDefences[i].Cost.crystal * 1.5) + myDefences[i].Cost.deuterium * 3;
+                    myDefence.ResuourcesTypeTotal[i] = myDefence.ResuourcesTypeInfo[i] * myDefence.MyDefence[i];
+                    myDefence.myDefenceResuourcesTotal += myDefence.ResuourcesTypeTotal[i];
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    myDefence.ResuourcesTypeInfo[i] = myDefences[i].Cost.metal + myDefences[i].Cost.crystal + myDefences[i].Cost.deuterium;
+                    myDefence.ResuourcesTypeTotal[i] = myDefence.ResuourcesTypeInfo[i] * myDefence.MyDefence[i];
+                    myDefence.myDefenceResuourcesTotal += myDefence.ResuourcesTypeTotal[i];
+                }
+            }
+            if (myDefence.myDefenceResuourcesTotal != 0)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    myDefence.resuourcesTypeTotalPercentage[i] = myDefence.ResuourcesTypeTotal[i] / (double)myDefence.myDefenceResuourcesTotal;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    myDefence.resuourcesTypeTotalPercentage[i] = 0;
+                }
+            }
+            return myDefence.resuourcesTypeTotalPercentage;
+        }
     }
 
 
-    public class Wessel
-    {
-        public Resources cost;
-        public int hull;
-        public int shield;
-        public int weapons;
-        public int spead;
-        public int storage;
-        public int fuelConsumation;
 
-
-    }
 }

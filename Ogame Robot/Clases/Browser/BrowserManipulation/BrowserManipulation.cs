@@ -625,7 +625,7 @@ namespace Ogame_Robot.Clases
                                     {
                                         uncancled = false;
                                     }
-                                    if (2 * simulationResult.attackerLossRes < simulationResult.attackerLossRes)
+                                    if (2 * simulationResult.attackerLossRes > simulationResult.attackerLossRes)
                                     {
                                         uncancled = false;
                                     }
@@ -719,7 +719,22 @@ namespace Ogame_Robot.Clases
                                     }
 
                                 }
-
+                                /*
+<div class="smallplanet smaller" id="planet-33651469">
+                        <a href="https://s135-cz.ogame.gameforge.com/game/index.php?page=station&amp;cp=33651469" title="" class="planetlink active tooltipRight tooltipClose js_hideTipOnMobile">
+                            <img class="planetPic js_replace2x" alt="Theundr" src="https://gf1.geo.gfsrv.net/cdnff/a927ecb6fbbe6d4b2be0dee3a8796f.png" width="30" height="30">
+                            <span class="planet-name ">Theundr</span>
+                            <span class="planet-koords ">[1:446:7]</span>
+                        </a>
+                                                    <a class="alert tooltip js_hideTipOnMobile eventToggle" href="javascript:void(0);" title="Útok!">
+                               <span class="activity"></span>
+                            </a>
+                                                                                                                                                                                <a class="constructionIcon tooltip js_hideTipOnMobile" href="https://s135-cz.ogame.gameforge.com/game/index.php?page=overview&amp;cp=33651469" title="">
+                                                                  <span class="icon12px icon_wrench"></span>
+                                                           </a>
+                                                                                            </div>
+                                 
+                                */
 
 
 

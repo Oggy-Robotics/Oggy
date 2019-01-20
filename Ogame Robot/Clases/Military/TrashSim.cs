@@ -195,12 +195,12 @@ namespace Ogame_Robot.Clases
                     WaitForElement(By.XPath(TrashSimLib.relxpathNoTechInfoClosePopUp), TrashDriver).Click();
                     /*předpokládáme částečný výzkum zbraní?? Třeba by Tom mohl zavést odkaz na inic texťák
                      abychom předpoklady mohly upravit individuálně?*/
-                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechArmour), TrashDriver).Clear();
-                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechArmour), TrashDriver).SendKeys("10");
-                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechShield), TrashDriver).Clear();
-                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechShield), TrashDriver).SendKeys("10");
-                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechWeapons), TrashDriver).Clear();
-                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechWeapons), TrashDriver).SendKeys("10");
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechArmour.Replace("attackers", "defenders")), TrashDriver).Clear();
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechArmour.Replace("attackers", "defenders")), TrashDriver).SendKeys("10");
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechShield.Replace("attackers", "defenders")), TrashDriver).Clear();
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechShield.Replace("attackers", "defenders")), TrashDriver).SendKeys("10");
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechWeapons.Replace("attackers", "defenders")), TrashDriver).Clear();
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechWeapons.Replace("attackers", "defenders")), TrashDriver).SendKeys("10");
                 }
             } 
 

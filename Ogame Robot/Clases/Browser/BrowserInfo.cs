@@ -270,6 +270,7 @@ namespace Ogame_Robot.Clases
 
             public static string relxpathSimulateButton = "//div[@id='simulate-button-bottom']";
             public static string relxpathLoadSpyMessageButton = "//div[@class='party-api-wrapper clearfix']//div[1]";
+            public static string relxpathNoTechInfoClosePopUp = "//div[@id='missingtech-complete-btn']";
             public static string idLoot = "result-possible-plunder-total";
             public static string idCookie = "uv-apps-cc-agree";
 

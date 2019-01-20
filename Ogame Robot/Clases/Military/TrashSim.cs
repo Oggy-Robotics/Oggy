@@ -180,19 +180,35 @@ namespace Ogame_Robot.Clases
                 WaitForElement(By.XPath(TrashSimLib.relxpathAtackerPositionPosition.Replace("attackers", "defenders")), TrashDriver).Clear();
                 WaitForElement(By.XPath(TrashSimLib.relxpathAtackerPositionPosition.Replace("attackers", "defenders")), TrashDriver).SendKeys(Convert.ToString(defenderCoordinates.planet));
             }
-
+            
             //API
             if (API != null)
             {
                 WaitForElement(By.XPath(TrashSimLib.relxpathdefendersAPI), TrashDriver).Clear();
                 WaitForElement(By.XPath(TrashSimLib.relxpathdefendersAPI), TrashDriver).SendKeys(API);
-                WaitForElement(By.XPath(TrashSimLib.relxpathLoadSpyMessageButton), TrashDriver).Click();
-            }
+                try
+                {//Z neznámých důvodů se otevřela výzva k zadání tech infa útočníka ještě před spuštěním simulace
+                    WaitForElement(By.XPath(TrashSimLib.relxpathLoadSpyMessageButton), TrashDriver).Click();
+                }
+                catch (Exception)
+                {
+                    WaitForElement(By.XPath(TrashSimLib.relxpathNoTechInfoClosePopUp), TrashDriver).Click();
+                    /*předpokládáme částečný výzkum zbraní?? Třeba by Tom mohl zavést odkaz na inic texťák
+                     abychom předpoklady mohly upravit individuálně?*/
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechArmour), TrashDriver).Clear();
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechArmour), TrashDriver).SendKeys("10");
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechShield), TrashDriver).Clear();
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechShield), TrashDriver).SendKeys("10");
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechWeapons), TrashDriver).Clear();
+                    WaitForElement(By.XPath(TrashSimLib.relxpathAtackerTechWeapons), TrashDriver).SendKeys("10");
+                }
+            } 
 
 
             Thread.Sleep(50);
             //Simulate
             bool unloaded = true;
+            Byte counter = 0;
             while (unloaded)
             {
                 try
@@ -200,8 +216,16 @@ namespace Ogame_Robot.Clases
                     TrashDriver.FindElement(By.XPath(TrashSimLib.relxpathSimulateButton)).Click();
                     unloaded = false;
                 }
-                catch (Exception)
-                { }
+                catch (Exception e)
+                {
+                    counter++;
+                    Thread.Sleep(5);
+                    if (counter >= 200)
+                    {
+                        FilesOperations.ErrorLogFileAddError(e);
+                        unloaded = false;
+                    }
+                }
             }
             //is simulation completed?
             unloaded = true;

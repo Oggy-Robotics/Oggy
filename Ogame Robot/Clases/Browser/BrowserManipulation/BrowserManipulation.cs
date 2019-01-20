@@ -65,8 +65,8 @@ namespace Ogame_Robot.Clases
         {
 
 
-            //kliknutí na tabulku pro přihlášení          
-            IWebElement logintab = driver.FindElement(By.Id(Login.idlogintab));//!firefox aktualizace error znovunačetlo to browser, při pvrním použití
+            //kliknutí na tabulku pro přihlášení   
+            IWebElement logintab = new WebDriverWait(driver, TimeSpan.FromMilliseconds(3000)).Until(ExpectedConditions.ElementExists(By.Id(Login.idlogintab)));
             logintab.Click();
 
             //vypsání přihlašovaciho jmena

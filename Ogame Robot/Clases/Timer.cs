@@ -178,7 +178,7 @@ namespace Ogame_Robot.Clases
                 bool uncancled = true;
                 if (settings != null)
                 {
-                    if (settings == "False")
+                    if (settings == "false")
                     {
                         timer.packedFunctions.RemoveAt(timer.PositionOfFciByID(ID));
                         uncancled = false;
@@ -237,7 +237,7 @@ namespace Ogame_Robot.Clases
                 bool AlreadyCalled = false;
                 if (settings != null)
                 {
-                    if (settings == "False")
+                    if (settings == "false")
                     {
                         timer.packedFunctions.RemoveAt(timer.PositionOfFciByID(ID));
                         uncancled = false;

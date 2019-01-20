@@ -41,7 +41,7 @@ namespace Ogame_Robot.Clases
                 int rezim = 2;
                 if (settings != null)
                 {
-                    if (settings == "false")
+                    if (settings == "false" || settings == "False")
                     {
                         timer.packedFunctions.RemoveAt(timer.PositionOfFciByID(ID));
                         uncancled = false;

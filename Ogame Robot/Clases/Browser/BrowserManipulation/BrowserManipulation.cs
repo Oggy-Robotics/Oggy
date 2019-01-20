@@ -527,8 +527,10 @@ namespace Ogame_Robot.Clases
             }
 
             //iterating messages
-            for (int i = sortedMessages.Count() - 1; i > -1; i--)
-            {
+            //for (int i = sortedMessages.Count() - 1; i > -1; i--) //archived
+            for (int i = 0; i > 18/*Odešle max 18letek zatim?
+                Možnost rozšíření že nastavíme počet kolik letek odeslat max?*/; i++)
+                {
                 if (sortedMessages.Values[i].alreadyAttacked == 0)
                     if (sortedMessages.Values[i].fleetResorces != -1 && sortedMessages.Values[i].defenceResorces != -1)//spy message know fleet and defence
                         if (sortedMessages.Keys[i] > minimalHourResources)//3násopek produkce
